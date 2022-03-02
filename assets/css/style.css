@@ -193,10 +193,6 @@ body{
     color: white;
 }
 
-#owner-picture:hover{
-    transform: scale(1.2);
-}
-
 /* animations */
 @keyframes slide-in {
     from{right: 100%}
