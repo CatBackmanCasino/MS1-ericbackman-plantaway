@@ -60,24 +60,31 @@ body{
     width: 100%;
     height: 300px;
     overflow: hidden;
+  
 
 }
 #carousel{
     background-image: url(../images/house-plants-t.webp);
     height: 100%;
+    animation-name: zoom;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    z-index: -100;
 
 }
 
 #fun-quote-container{
     margin-top: -80px;
-    background-color: rgba(255, 228, 196, 0.562);
+   
     text-align: center;
     height: 80px;
+    z-index: 100;
 }
 #fun-quote-container p{
     font-size: x-large;
 }
 #fun-quote-text{
+    background-color: rgba(255, 228, 196, 0.562);
     height: 80px;
     padding-top: 10px;
     animation-name: slide-in;
@@ -194,6 +201,16 @@ body{
 @keyframes slide-in {
     from{right: 100%}
     to{right: 0%}
+}
+
+@keyframes zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+    
     
 }
 
@@ -230,5 +247,12 @@ body{
         background-position: center;
     }
 
+    #video-container{
+        grid-template-columns: 1fr;
+        }
 
-}
+    #footer{
+        
+    }
+
+    }
