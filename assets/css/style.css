@@ -4,9 +4,11 @@
 }
 
 #header{
+    position: fixed;
     width: 100%;
     height: 50px;
-    background-color: antiquewhite;
+    background-color: rgba(48, 139, 29, 0.534);
+
     
 }
 
@@ -30,25 +32,42 @@
 }
 
 #carousel{
+
     background-image: url(../images/house-plants-t.webp);
-    height: 300px;
-    width: auto;
-    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 #about-container{
     margin-top: 100px;
     height: 350px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: auto;
+    
+    
 }
 
 .about-item{
+    /* position: relative; */
 }
 
 #owner-picture{
     background-image: url("../images/eric.png");
-    width:100%;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 60vh;
+    width: 60vh;
+ 
+}
+
+#footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
 }
