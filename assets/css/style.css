@@ -20,10 +20,7 @@ body{
     height: 80px;
     font-size: 1.5;
     text-transform: uppercase;
-    background-color: rgba(47, 139, 29, 0.877);
-    
-
-    
+    background-color: rgba(47, 139, 29, 0.877);   
 }
 
 #logo-big{
@@ -75,7 +72,7 @@ body{
 }
 #fun-quote-text{
     height: 80px;
-    padding: auto;
+    padding-top: 10px;
     animation-name: slide-in;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -132,6 +129,25 @@ body{
  
 }
 
+/* video section */
+
+#video-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 50px;
+    background-color: rgba(255, 228, 196, 0.582);
+   }
+.video{
+}
+
+.video-description{
+
+}
+
+.video-description hr{
+    width: 80%;
+
+}
 
 /* footer */
 
@@ -140,6 +156,15 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     height: 100px;
     text-align: center;
+}
+
+#opened{
+    text-align: left;
+    margin-left: 10px;
+}
+#adress{
+    text-align: right;
+    margin-right: 10px;
 }
 
 
