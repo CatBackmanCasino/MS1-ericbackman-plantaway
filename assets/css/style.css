@@ -13,176 +13,179 @@ body{
     overflow-x: hidden;
 }
 
+/* welcome-animation */
+#welcome-animation{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/small-plant.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1000;
+}
 /* header */
 #header{
     position: fixed;
     width: 100%;
-    height: 70px;
-    font-size: 1.5;
+    height: auto;
+    min-height: 70px;
     text-transform: uppercase;
     background-color: rgba(47, 139, 29, 0.877);   
     z-index: 101;
 }
 
 #logo-big{
-    width: 25%;
-    height: 50px;
+    height: 70px;
     float: left;
-    line-height: 25px;
-    margin-left: 5%;
-    margin-top: 20px;
+    padding-left: 5px;
     text-shadow: 0px 0px 4px rgb(205, 255, 217);
-
 }
+
+#logo-big p{
+    font-size: xx-small;
+}
+
 #navigation-list{
-    position: sticky;
     top: 0px;
-    width: 65%;
+    width: auto;
     height: 50px;
     float: right;
     list-style: none;
     font-size: larger;
     text-align: center;
-    text-shadow: 0px 0px 4px rgb(205, 255, 217);
-    
-
+    text-shadow: 0px 0px 4px rgb(205, 255, 217)
 }
 
 .nav-item{
-    display: inline-block;
-    width: 19%;
-    line-height: 80px;
+    display: inline;
+    line-height: 70px;
+    margin: 0 15px;
 }
 
-/* carousel */
+/* presentation */
 
-#main-picture{
-    height:500px;
-    overflow: hidden;
-    position: relative;
-}
-
-#carousel-container{
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-
-}
-#carousel{
+#presentation{
     background-image: url(../images/house-plants-t.webp);
-    height: 100%;
-    animation-name: zoom;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
-    z-index: -100;
-    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-top: 100px;
+    width: 100%;
 }
 
 #awesome-quote{
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    width: 50%;
+    height: auto;
+    margin: 10px 50px 10px 12%;
+    margin-top: 50px;
+    min-height: 200px;
+    font-size: 1.7rem;
     background-color: rgba(30, 85, 4, 0.801);
     color: rgb(239, 245, 236);
-    padding: 10px 20px;
+    text-align: right;
+    padding-right: 10px;
     border-radius: 10px;
-}
+   }
 
-#awesome-quote h2{
-    text-align: center;
-}
-.about-item{
-    position: absolute;
-    background-color: rgba(56, 196, 44, 0.822);
-
-    top: 130px; 
-    left: 70px;
-    height: auto;
-
-}
-
-.about-item h2{
-
-}
-
-.about-item p{
-
-}
-
+   #awesome-quote h2{
+       text-align: center;
+   }
 
 #owner-picture{
-    
-    position: absolute;
-    bottom: 100px;
-    right: 100px;
-   z-index: 100;
+    z-index: 100;
+    position: relative;
+    margin-left: -10%;
+    float: left;
     background-repeat: no-repeat;
     background-size:cover;
     background-position:top;
-    width: 300px;
-    height: 300px;
+    width: 18vw;
+    height: 18vw;
     border-radius: 50%;
     background-image: url("../images/eric.png");
     box-shadow: 0px 0px 20px black;
- 
 }
 
-#fun-quote-container{
-    margin-top: -80px;
-   overflow: hidden;
-    text-align: center;
-    height: 80px;
-    z-index: 100;
-}
-#fun-quote-container p{
-    font-size: x-large;
-}
 #fun-quote-text{
+    margin-top: 50px;
     background-color: rgba(255, 228, 196, 0.87);
-    height: 70px;
-    padding-top: 10px;
+    text-align: center;
     animation-name: slide-in;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    overflow: hidden;
-    position: relative;
 }
-
 
 /* about section */
-#about-container{
-    background-color: rgba(255, 228, 196, 0.582);
+#about-section{
+    margin-top: 50px;   
+}
+
+/* flip cards */
+
+#flip-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: bisque;
+    width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* video section */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    float: left;
+    width: auto;
+    height: auto;
+    min-height: 200px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
-#video-container{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 50px;
-    background-color: rgba(255, 228, 196, 0.582);
-   }
-.video{
-    box-shadow: 10px 10px 30px;
-}
 
-.video-description{
-
-}
-
-.video-description hr{
-    width: 80%;
-
-}
 
 /* footer */
 
 #footer-container{
+    width:100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 100px;
@@ -211,100 +214,14 @@ body{
     color: white;
 }
 
-/* animations */
-@keyframes slide-in {
-    from{right: 100%}
-    to{right: 0%}
-}
+/*animation */
 
-@keyframes zoom {
+@keyframes slide-in {
     from{
-        transform: scale(1);
+        margin-left: -100%;
     }
     to{
-        transform: scale(1.1);
+        margin-left: 0;
     }
     
-    
-}
-
-@media screen and (max-width: 650px){
-   
-    #header{
-        /* position: static; */
-    }
-
-    #logo-big{
-        width: 100%;
-        position: static;
-    }
-    
-    #navigation-list{
-        margin-top:px;
-        width: 100%;
-        line-height: 50px;
-        background-color: rgba(255, 228, 196, 0.582);
-    }
-   
-    #awesome-quote{
-        font-size: 80%;
-    }
-
-    .nav-item{
-        font-size: xx-small;
-        width: 17%;
-        line-height: 20px;
-
-    }
-
-    list
-
-    #owner-picture {
-        visibility: hidden;
-    }
-
-    .about-item {
-
-    }
-
-    #about-container{
-        grid-template-columns: 1fr;
-    }
-    #carousel{
-        background-position: center;
-    }
-
-    #video-container{
-        grid-template-columns: 1fr;
-
-        /* }
-    .video{
-    position: absolute;
-    }
-
-    #footer{
-        
-    } */
- }
-
-
-@media screen and (max-width: 1000px){
-    #awesome-quote{
-        height: auto;
-        width: 80%;
-        left: 10%;
-        right: 10%;
-        top: 130px;
-        bottom: auto;
-    }
-    #owner-picture{
-        visibility: hidden;
-    }
-
-    .about-item{
-        width: 80%
-    }
-
-    
-
 }
