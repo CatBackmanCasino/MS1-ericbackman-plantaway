@@ -19,10 +19,11 @@ body{
     height: 100%;
     width: 100%;
     padding: 0;
+    overflow: hidden;
 }
 #welcome-animation-top{
     position: absolute;
-    background-color: rgb(51, 124, 8);
+    background-color: rgba(127, 255, 212, 0.479);
     height: 50%;
     width: 50%;
     font-size: 3vw;
@@ -35,16 +36,17 @@ body{
 
 #we{
     position: absolute;
-    background-color: rgba(14, 102, 11, 0);
+    background-image: url("../images/upper-left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     z-index: 2030;
-    bottom: 0px;
-    right: 0px;
+    bottom: -2%;
+    right: 0;
     }
 
 #welcome-animation-right{
     position: absolute;
-    background-color: rgb(14, 85, 8);
-    
+    background-color: rgb(119, 0, 119);
     height: 50%;
     width: 50%;
     top: 0;
@@ -57,12 +59,16 @@ body{
     animation-fill-mode: forwards;
 }
 
-#l{
+#lc{
     position: absolute;
+    background-image: url("../images/upper-right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     z-index: 2030;
     bottom: 0px;
-    left: 0px;
-    }
+    left: 0;
+    background-position: bottom;
+}
 
 #welcome-animation-bottom{
     position: absolute;
@@ -80,13 +86,16 @@ body{
     animation-fill-mode: forwards;
     }
 
-#me{
+    #om{
         position: absolute;
-        background-color: rgba(25, 0, 255, 0);
+        background-image: url("../images/bottom-left.png");
+        background-size: cover;
+        background-repeat: no-repeat;
         z-index: 2030;
         top: 0px;
-        left: 0px;
-        }
+        right: 0;
+        background-position: top;
+    }
 
 #welcome-animation-left{
     position: absolute;
@@ -102,12 +111,17 @@ body{
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
-#co{
+
+#e{
     position: absolute;
+    background-image: url("../images/bottom-right.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: 2030;
     top: 0px;
-    right: 0px;
-    }
+    left: 0;
+    width: 20%;
+}
 /* header */
 #header{
     position: fixed;
@@ -166,7 +180,7 @@ body{
     font-size: 1.7rem;
     background-color: rgba(30, 85, 4, 0.801);
     color: rgb(239, 245, 236);
-    text-align: right;
+    text-align: left;
     padding-right: 10px;
     border-radius: 10px;
    }
