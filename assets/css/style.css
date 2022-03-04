@@ -4,15 +4,14 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
-* a { 
+a { 
     color:rgb(116, 116, 116);    
 }
 
-* a:hover { 
-    text-shadow: 5px 5px 20px green;
+a:hover{
+    text-shadow: 10px 10px 10px black;
 }
 
 /*set font for whole page */
@@ -38,6 +37,9 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
+    animation-name: welcome-make-inactive;
+    animation-duration: 3.8s;
+    animation-fill-mode: forwards;
 }
 #welcome-animation-upper-left{
     position: absolute;
@@ -48,7 +50,7 @@ body{
     width: 50%;
     z-index: 2020;
     animation-name: welcome-slide-up;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
@@ -79,7 +81,7 @@ body{
     z-index: 2015;
     animation-name: welcome-slide-right;
     animation-delay: 2.1s;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -113,7 +115,7 @@ body{
     z-index: 2016;
     animation-name: welcome-slide-bottom;
     animation-delay: 2.3s;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     }
 
@@ -145,7 +147,7 @@ body{
     font-size: 3vw;;
     animation-name: welcome-slide-left;
     animation-delay: 2.7s;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -211,18 +213,23 @@ body{
 
 #presentation-background{
     background-image: url("../wood-plants.jpg");
-    min-height: rem;
-    padding: 5rem;
+    background-size: cover;
+    min-height: 15rem;
+    padding: 8rem 3rem;
 }
 
 #presentation-container{
     background-color: rgba(32, 175, 51, 0.637);
     border-radius: 250px 0px 0px 0px;
+    max-width: 60rem;
+    box-shadow: 10px 10px 20px black;
+    
 
 }
 
 #presentation-text{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+   
 }
 
 #presentation-text h2{
@@ -231,30 +238,31 @@ body{
 }
 
 #plant-guy-image{
-    height: 40rem;
+    height: 26rem;
 }
 
 #owner-picture-container{
     float: left;
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 20px 5px 50px black;
 }
 
 #arrow-down{
-    color: rgb(171, 255, 160);
+    color: rgb(101, 202, 88);
     text-align: right;
     position: relative;
     font-size: 7rem;
     animation-name: arrow-movement;
-    animation-duration: 700ms;
+    animation-duration: 2s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     right :4rem;
     float: right;
-    margin-top: -6rem;
+    margin-top: rem;
+    text-shadow: 4px 4px 10px black;
 }
 
 @keyframes arrow-movement {
@@ -379,6 +387,7 @@ body{
     }
     to{
         top: -100%;
+        visibility: hidden;
     }
     
 }
@@ -389,6 +398,7 @@ body{
     }
     to{
         right: -100%;
+        visibility: hidden;
     }
     
 }
@@ -413,7 +423,15 @@ body{
     }
     to{
         left: -100%;
+        visibility: hidden;
     }
-    
 } 
 
+@keyframes welcome-make-inactive{
+    from{
+        visibility: visible;
+    }
+    to{
+        visibility: hidden;
+    }
+}
