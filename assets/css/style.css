@@ -4,14 +4,21 @@
 * {
     margin: 0;
     padding: 0;
+
+}
+
+* a { 
+    color:rgb(116, 116, 116);    
+}
+
+* a:hover { 
+    text-shadow: 5px 5px 20px green;
 }
 
 /*set font for whole page */
 body{
-    
-    
     width: 100%;
-
+    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
     font-family: poppins;
@@ -130,7 +137,9 @@ body{
 } */
 /* header */
 #header{
-
+    position: sticky;
+    top:0;
+    width: 100%;
     height: auto;
     min-height: 80px;
     text-transform: uppercase;
@@ -160,7 +169,7 @@ body{
     list-style: none;
     font-size: 1.5rem;
     text-align: right;
-    text-shadow: 0px 0px 4px rgb(205, 255, 217)
+    text-shadow: 0px 0px 4px rgb(205, 255, 217);
 }
 
 .nav-item{
@@ -171,60 +180,64 @@ body{
 
 /* presentation */
 
-#presentation-container{
+#presentation-background{
     background-image: url("../wood-plants.jpg");
-    height: 40rem;
-    
+    min-height: rem;
+    padding: 5rem;
 }
 
-#presentation{
-    position: absolute;
-    top: 14rem;
-    left: 5%;
-    width: 90rem;
-    max-width: 90%;
-    background-color: rgba(40, 175, 40, 0.699);
-    border-radius: 100px 10px  10px 10px;
+#presentation-container{
+    background-color: rgba(32, 175, 51, 0.637);
+    border-radius: 250px 0px 0px 0px;
+
 }
 
-#image-container-plant-guy{
-    margin-top: -1rem;
-    margin-left: -1rem;
-    margin-right: 1rem;
-    height: 20rem;
-    width: 20rem;
-    border-radius: 50%;
-    float: left;
-    overflow: hidden;
-    z-index: 100; 
-    position: relative;
-    box-shadow: 5px 5px 10px black;
+#presentation-text{
+    font-size: 2.5rem;
+}
 
+#presentation-text h2{
+    text-align: center;
 }
 
 #plant-guy-image{
-    max-width: 100%;
-    position: relative; 
+    height: 40rem;
 }
 
-#image-inset-shadow{
-    margin-top: -1rem;
-    margin-left: -1rem;
-    margin-right: 1rem;
+#owner-picture-container{
+    float: left;
     height: 20rem;
     width: 20rem;
     border-radius: 50%;
-    position: absolute;
-    z-index: 10000;
-    box-shadow: inset -5px -5px 20px rgb(0, 0, 0);
-
+    overflow: hidden;
+    box-shadow: 20px 5px 50px black;
 }
 
-#presentation p, #presentation h2{
-    text-align: justify;
-    font-size: 2rem;
-    padding-left: 3rem;
-    padding-right: 2rem;
+#arrow-down{
+    text-align: right;
+    position: relative;
+    font-size: 7rem;
+    animation-name: arrow-movement;
+    animation-duration: 700ms;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    right :4rem;
+    float: right;
+    margin-top: -6rem;
+}
+
+@keyframes arrow-movement {
+    0%{
+        top: -4rem;
+    }
+
+    50%{
+        top: 0rem;
+    }
+    100%{
+        top: -4rem;
+    }
+   
 }
 #fun-quote-text {
     margin-top: 5rem;
@@ -236,26 +249,46 @@ body{
 } 
 
 /* products */
-#products-container{
+
+#products-grid-container{
+    margin-top: 5rem;
+    background-color: rgb(231, 231, 231);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr auto;
-    background-color: rgba(0, 0, 0, 0);
-
-
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas:  "a a a"
+                          "b c d";
+    text-align: center;
+    column-gap: 5rem;
 }
-.product-class{
-    height: 500px;
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
+
+#products-grid-container > .section-logo{
+    font-size: 2rem;
+    grid-area: a;
+    text-align: center;
+  }
+
+#products-grid-container > #product-1{
+    
+    grid-area: b;
+    text-align: center;
+  }
+  #products-grid-container > #product-2{
+    
+    grid-area: c;
+    text-align: center;
+  }
+  #products-grid-container > #product-3{
+    
+    grid-area: d;
+    text-align: center;
+  }
 
 
 
-}
 /* footer */
 
 #footer-grid-container{
-    border: 1px solid black;
+    background-color: rgb(231, 231, 231);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:  "a a a a"
@@ -265,8 +298,8 @@ body{
     column-gap: 5rem;
   }
   
-  #footer-grid-container > #section-logo{
-    
+  #footer-grid-container > .section-logo{
+      font-size: 2rem;
     grid-area: a;
     text-align: center;
   }
@@ -282,30 +315,19 @@ body{
   }
   
   #footer-grid-container > #section-social{
-  
     grid-area: d;
   }
 
-#section-d a{
-    font-size: 3rem;
-    padding: 5rem;
-}
+  #section-social{
+      word-spacing: 20rem;
+      color: rgb(255, 255, 0);
+      padding-bottom: 1rem;
+      font-size: 2rem;
+  }
+
 
 
 /* psuedo */
-
-.nav-item:hover{
-    color:rgb(255, 0, 221);
-    text-shadow: 0 0 10px rgb(255, 0, 221);
-}
-.nav-item:active{
-    color: rgb(255, 0, 221);
-    text-shadow: 0 0 10px rgb(255, 0, 221);
-}
-#logo-big:hover{
-    color: rgb(255, 0, 221);
-    text-shadow: 0 0 10px rgb(255, 0, 221);
-}
 
 /*animation */
 
@@ -359,3 +381,4 @@ body{
     }
     
 } 
+
