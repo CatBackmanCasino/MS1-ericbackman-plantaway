@@ -27,20 +27,14 @@ body{
 }
 
 /* welcome-animation */
-/* #welcome-animation{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
-    z-index: 6000;
-}
-#welcome-animation-top{
+
+#welcome-animation-upper-left{
     position: absolute;
-    background-color: rgb(238, 238, 238);
+    top: 0;
+    left: 0;
+    background-color: rgb(103, 255, 129);
     height: 50%;
     width: 50%;
-    font-size: 3vw;
     z-index: 2020;
     animation-name: welcome-slide-up;
     animation-delay: 2s;
@@ -48,23 +42,28 @@ body{
     animation-fill-mode: forwards;
 }
 
-#we{
+#upper-left-welcome-slide{
     position: absolute;
-    background-image: url("../images/upper-left.png");
-    background-size: contain;
+    height: 100px;
     bottom: 0;
     right: 0;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    }
+}
 
-#welcome-animation-right{
+#welcome-animation-upper-left h1{
+    position:absolute;
+    bottom: 8rem;
+    right: 0;
+    
+}
+
+
+
+#welcome-animation-upper-right{
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(55, 194, 90);
     height: 50%;
     width: 50%;
     top: 0;
-    font-size: 3vw;
     right: 0px;
     z-index: 2015;
     animation-name: welcome-slide-right;
@@ -73,19 +72,27 @@ body{
     animation-fill-mode: forwards;
 }
 
-#lc{
+#upper-right-welcome-slide{
     position: absolute;
-    background-image: url("../images/upper-right.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom left;
+    height: 118px;
     bottom: 0;
     left: 0;
+
+
 }
 
-#welcome-animation-bottom{
+#welcome-animation-upper-right h1{
+    position:absolute;
+    left: 2rem;
+    bottom: 8rem;
+    
+}
+
+
+
+#welcome-animation-bottom-right{
     position: absolute;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(43, 155, 71);
   
     height: 50%;
     width: 50%;
@@ -99,20 +106,26 @@ body{
     animation-fill-mode: forwards;
     }
 
-    #om{
+    #bottom-right-welcome-slide{
         position: absolute;
-        background-image: url("../images/bottom-left.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: 2030;
-        top: 0px;
-        right: 0;
-        background-position: top right;
+        height: 100px;
+        top: 0;
+        left: 0;
     }
 
-#welcome-animation-left{
+    #welcome-animation-bottom-right h1{
+        position:absolute;
+        left: 20px;
+        top:8rem;
+        left: 5rem;
+        
+    }
+    
+    
+
+#welcome-animation-bottom-left{
     position: absolute;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(100, 214, 129);
     height: 50%;
     width: 50%;
     bottom: 0;
@@ -125,16 +138,21 @@ body{
     animation-fill-mode: forwards;
 }
 
-#e{
+#bottom-left-welcome-slide{
     position: absolute;
-    background-image: url("../images/bottom-right.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2030;
-    top: 0px;
-    left: 0;
-    background-position: top left;
-} */
+    height: 100px;
+    top: 0;
+    right: 0;
+}
+
+#welcome-animation-bottom-left h1{
+    position:absolute;
+    right: 10rem;
+    top: 8rem;
+
+    
+}
+
 /* header */
 #header{
     position: sticky;
@@ -198,6 +216,7 @@ body{
 
 #presentation-text h2{
     text-align: center;
+    color:rgb(0, 41, 2);
 }
 
 #plant-guy-image{
@@ -214,6 +233,7 @@ body{
 }
 
 #arrow-down{
+    color: rgb(171, 255, 160);
     text-align: right;
     position: relative;
     font-size: 7rem;
@@ -342,7 +362,7 @@ body{
 }
 /* welcome animation */
 
-@keyframes welcome-slide-up {
+ @keyframes welcome-slide-up {
     from{
         top: 0;
     }
@@ -363,11 +383,15 @@ body{
 }
 
 @keyframes welcome-slide-bottom {
-    from{
+    0%{
         bottom: 0;
     }
-    to{
+    30%{visibility: hidden;
+
+    }
+    100%{
         bottom: -100%;
+        visibility: hidden;
     }
     
 }
