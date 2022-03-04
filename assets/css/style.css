@@ -183,18 +183,41 @@ body{
     left: 5%;
     width: 90rem;
     max-width: 90%;
-    background-color: aquamarine;
+    background-color: rgba(40, 175, 40, 0.699);
     border-radius: 100px 10px  10px 10px;
 }
-#plant-guy{
+
+#image-container-plant-guy{
     margin-top: -1rem;
     margin-left: -1rem;
     margin-right: 1rem;
     height: 20rem;
-    width: 20em;
+    width: 20rem;
     border-radius: 50%;
     float: left;
-    box-shadow: 0px 0px 20px black;
+    overflow: hidden;
+    z-index: 100; 
+    position: relative;
+    box-shadow: 5px 5px 10px black;
+
+}
+
+#plant-guy-image{
+    max-width: 100%;
+    position: relative; 
+}
+
+#image-inset-shadow{
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: 1rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10000;
+    box-shadow: inset -5px -5px 20px rgb(0, 0, 0);
+
 }
 
 #presentation p, #presentation h2{
@@ -225,29 +248,47 @@ body{
     float: left;
     margin-left: auto;
     margin-right: auto;
-    content: ;
 
 
 
 }
 /* footer */
 
-#footer-container{
-    width:100%;
+#footer-grid-container{
+    border: 1px solid black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:  "a a a a"
+                          "b b c c"
+                          "d d d d";
     text-align: center;
-    z-index: 5000;
-}
-
-#opened{
-    text-align: left;
-    margin-left: 10px;
-}
-#adress{
+    column-gap: 5rem;
+  }
+  
+  #footer-grid-container > #section-logo{
+    
+    grid-area: a;
+    text-align: center;
+  }
+  
+  #footer-grid-container > #section-opening-hours{
     text-align: right;
-    margin-right: 10px;
+    grid-area: b;
+  }
+  
+  #footer-grid-container > #section-contact{
+  text-align: left;
+    grid-area: c;
+  }
+  
+  #footer-grid-container > #section-social{
+  
+    grid-area: d;
+  }
+
+#section-d a{
+    font-size: 3rem;
+    padding: 5rem;
 }
 
 
