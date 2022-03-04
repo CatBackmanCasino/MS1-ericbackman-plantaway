@@ -28,6 +28,17 @@ body{
 
 /* welcome-animation */
 
+#welcome-animation-container{
+    z-index: 50000;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
 #welcome-animation-upper-left{
     position: absolute;
     top: 0;
@@ -121,7 +132,7 @@ body{
         
     }
     
-    
+     
 
 #welcome-animation-bottom-left{
     position: absolute;
