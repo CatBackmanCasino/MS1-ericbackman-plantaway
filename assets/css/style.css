@@ -11,10 +11,10 @@ a {
 }
 
 a:hover{
-    text-shadow: 10px 10px 10px black;
+    text-shadow: 5px 5px 10px rgb(0, 255, 34);
 }
 
-/*set font for whole page */
+/*settings for whole site*/
 body{
     width: 100%;
     max-width: 1800px;
@@ -24,6 +24,8 @@ body{
     font-weight: 200;
     overflow-x: hidden;
 }
+
+
 
 /* welcome-animation */
 
@@ -45,7 +47,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(103, 255, 129);
+    background-color: rgb(216, 216, 216);
     height: 50%;
     width: 50%;
     z-index: 2020;
@@ -66,6 +68,7 @@ body{
     position:absolute;
     bottom: 8rem;
     right: 0;
+    font-size: 2rem;
     
 }
 
@@ -73,7 +76,7 @@ body{
 
 #welcome-animation-upper-right{
     position: absolute;
-    background-color: rgb(55, 194, 90);
+    background-color: rgb(216, 216, 216);
     height: 50%;
     width: 50%;
     top: 0;
@@ -98,6 +101,7 @@ body{
     position:absolute;
     left: 2rem;
     bottom: 8rem;
+    font-size: 2rem;
     
 }
 
@@ -105,7 +109,7 @@ body{
 
 #welcome-animation-bottom-right{
     position: absolute;
-    background-color: rgb(43, 155, 71);
+    background-color: rgb(236, 236, 236);
   
     height: 50%;
     width: 50%;
@@ -130,7 +134,8 @@ body{
         position:absolute;
         left: 20px;
         top:8rem;
-        left: 5rem;
+        left: 2rem;
+        font-size: 2rem;
         
     }
     
@@ -138,7 +143,7 @@ body{
 
 #welcome-animation-bottom-left{
     position: absolute;
-    background-color: rgb(100, 214, 129);
+    background-color: rgb(221, 221, 221);
     height: 50%;
     width: 50%;
     bottom: 0;
@@ -160,8 +165,9 @@ body{
 
 #welcome-animation-bottom-left h1{
     position:absolute;
-    right: 10rem;
+    right: 2rem;
     top: 8rem;
+    font-size: 2rem; 
 
     
 }
@@ -174,7 +180,7 @@ body{
     height: auto;
     min-height: 80px;
     text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0.877);   
+    background-color: rgb(255, 255, 255);   
     z-index: 1003;
     display:grid;
     grid-template-columns: 1fr 3fr;
@@ -228,13 +234,21 @@ body{
 }
 
 #presentation-text{
-    font-size: 1.5rem;
-   
+    font-size: 1.5rem;  
 }
 
 #presentation-text h2{
     text-align: center;
     color:rgb(0, 41, 2);
+}
+#text-yellow-presentation{
+    color: gold;
+    text-shadow: 4px 4px 10px black;
+}
+
+#text-red-presentation{
+    color: rgb(255, 0, 0);
+    text-shadow: 4px 4px 10px black;
 }
 
 #plant-guy-image{
@@ -248,6 +262,7 @@ body{
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 20px 5px 50px black;
+    margin-right: 2rem;
 }
 
 #arrow-down{
@@ -290,14 +305,21 @@ body{
 /* products */
 
 #products-grid-container{
-    margin-top: 5rem;
-    background-color: rgb(231, 231, 231);
+    margin: 5rem auto 5rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-areas:  "a a a"
-                          "b c d";
+                          "b c d"
+                          "e f g"
+                          "h i j";
     text-align: center;
     column-gap: 5rem;
+    width:80%;
+}
+
+.product{
+    width: 100%;
+    box-shadow: 10px 10px 10px black;
 }
 
 #products-grid-container > .section-logo{
@@ -307,10 +329,12 @@ body{
   }
 
 #products-grid-container > #product-1{
-    
     grid-area: b;
     text-align: center;
   }
+
+
+
   #products-grid-container > #product-2{
     
     grid-area: c;
@@ -321,6 +345,48 @@ body{
     grid-area: d;
     text-align: center;
   }
+
+  #products-grid-container > #product-1-info{
+    margin-top: 2rem;  
+    grid-area: e;
+}
+
+#products-grid-container > #product-2-info{
+    grid-area: f;   
+    margin-top: 2rem;   
+}
+
+#products-grid-container > #product-3-info{
+    grid-area: g;
+    margin-top: 2rem;   
+}
+
+#products-grid-container > #product-1-buy{
+    grid-area: h;
+    font-size: 2rem;
+}
+
+#products-grid-container > #product-2-buy{
+    grid-area: i;
+    font-size: 2rem;
+    
+}
+
+#products-grid-container > #product-3-buy{
+    grid-area: j;
+    font-size: 2rem;
+    
+}
+/* About */
+
+#about{
+    padding-top: 6rem;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
 
 
 
@@ -378,6 +444,10 @@ body{
         margin-left: 0;
     }
     
+}
+
+#product-1:hover, #product-3:hover, #product-2:hover{
+    transform: scale(1.1);
 }
 /* welcome animation */
 
