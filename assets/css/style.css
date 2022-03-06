@@ -389,6 +389,17 @@ body{
     margin-bottom: 5rem;
 }
 
+#purchase-form{
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(184, 184, 184, 0.452);
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+#your-info, #purchase-info{
+    padding: 2rem;
+}
 
 
 
@@ -448,8 +459,8 @@ body{
     
 }
 
-#product-1:hover, #product-3:hover, #product-2:hover{
-    transform: scale(1.1);
+#product-1-buy:hover, #product-2-buy:hover, #product-3-buy:hover{
+    transform: scale(1.5)
 }
 /* welcome animation */
 
@@ -524,31 +535,28 @@ body{
                                 "g"
                                 "j";
     }
-    
+
     #products-grid-container > #product-1-info{
 
     margin-bottom : 2rem;
     grid-area: e;
-}
+    }
 
-#products-grid-container > #product-2-info{
+    #products-grid-container > #product-2-info{
     grid-area: f;   
     margin-bottom : 2rem;
-}
+    }
 
-#products-grid-container > #product-3-info{
+    #products-grid-container > #product-3-info{
     grid-area: g;
     margin-bottom : 2rem;
-}                        
-    
-        
-
-    }
+    }                        
 
     #about{
         padding-top: 2rem;
         width: 90%;
         margin-bottom: 2rem;
     }
-    
 }
+    
+
