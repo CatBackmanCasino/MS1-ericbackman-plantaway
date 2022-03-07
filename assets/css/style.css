@@ -216,6 +216,27 @@ body{
     line-height: 70px;
 }
 
+.dropdown-for-small-screens{
+    position:absolute;
+    right: 1rem;
+    top:1rem;
+    display: none;
+    font-size: 2rem;
+
+}
+
+.dropdown-item{
+    display: none;
+    flex:right;
+}
+
+.dropdown-for-small-screens:hover .dropdown-item{
+    display: block;
+    color: brown;
+}
+
+
+
 /* presentation */
 
 #presentation-background{
@@ -520,6 +541,14 @@ body{
 }
 
 @media screen and (max-width: 1000px) {
+
+    #navigation-list{
+        font-size: 1rem;
+        
+    }
+    .nav-item{
+        margin: 0 0.5rem;
+    }
     #products-grid-container{
         margin: 5rem auto 5rem auto;
         display: grid;
@@ -560,3 +589,14 @@ body{
 }
     
 
+@media screen and (max-width: 650px){
+    #navigation-list{
+        display: none;
+    }
+
+    .dropdown-for-small-screens{
+        display:block;
+        float: right;
+        text-align: right;
+    }
+}
