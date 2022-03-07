@@ -216,23 +216,31 @@ body{
     line-height: 70px;
 }
 
-.dropdown-for-small-screens{
+.hamburger{
     position:absolute;
     right: 1rem;
     top:1rem;
+}
+
+.hamburger > button{
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    font-size: 3rem;
+}
+
+#hamburger-item-container{
     display: none;
-    font-size: 2rem;
+    position: absolute;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 5rem;
+    width:100%;
+    background-color: rgb(228, 228, 228);
 
 }
 
 .dropdown-item{
-    display: none;
-    flex:right;
-}
-
-.dropdown-for-small-screens:hover .dropdown-item{
-    display: block;
-    color: brown;
+    text-align: center;
+    font-size: 2rem;
 }
 
 
@@ -590,13 +598,43 @@ body{
     
 
 @media screen and (max-width: 650px){
+   
     #navigation-list{
         display: none;
     }
 
-    .dropdown-for-small-screens{
-        display:block;
-        float: right;
-        text-align: right;
+    #hamburger-container{
+        width: 100%;
+        position:absolute;
+        top:1rem;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-areas: "a a a"
+                             "b c d";
     }
+    
+    #hamburger{
+        color:rgb(3, 92, 7);
+        padding-right:1rem;
+        text-align: right;
+        grid-area: a;
+        border: none;
+        background-color: rgba(240, 248, 255, 0);
+        font-size: 3rem;
+        
+    }
+
+    #hamburger-container a{
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        background-color: rgb(255, 255, 255);
+        display:none;
+        text-align: center;
+    }
+    #hamburger-container:hover a{
+        display:block;
+    }
+      
 }
+
