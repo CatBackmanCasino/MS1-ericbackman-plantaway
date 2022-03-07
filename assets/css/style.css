@@ -439,7 +439,7 @@ a:hover {
     margin: 0 auto 2rem auto;
     padding-bottom: 2rem;
     width:fit-content;
-    text-align: center;
+    text-align: left;
     background-color: rgb(206, 206, 206);
     font-size: 1rem;
     border-radius: 10px;
