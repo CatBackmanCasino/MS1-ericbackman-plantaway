@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Have a safe plantcation</title>
+
+
 </head>
 
 <body>
+    
     <div id="welcome-animation-container">
         <div id="welcome-animation-upper-left">
             <img id="upper-left-welcome-slide" src="assets/images/upper-left.png" alt="upper-left-intro-plant">
@@ -36,6 +39,7 @@
         </div>
     </div>
     </div>
+    <div id="top">
     <header id="header">
         <a href="#home"><span id="logo-big">
                 <h1>Plantway</h1>
@@ -45,9 +49,10 @@
         <span>
             <nav>
                 <ul id="navigation-list">
-                    <li class="nav-item"> <a href="#home"> Home</a> </li>
+                    
                     <li class="nav-item"><a href="#about">About</a></li>
                     <li class="nav-item"><a href="#products-grid-container">Products</a></li>
+                    <li class="nav-item"><a href="#top"> Home</a> </li>
                 </ul>
             </nav>
         </span>
@@ -55,14 +60,10 @@
 
         <div id="hamburger-container">
             <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
-            <a href="#about">About</a>
-            <a href="#products-grid-container">Products</a>
-            <a href="#home">Home</a>
-        </div>
-        <div id="hamburger-item-container">
-            <a href="#about">About</a>
-            <a href="#products-item-grid">Products</a>
-            <a href="#home">Home</a>
+            <a class="disapear" href="#top">Home</a>
+            <a class="disapear" href="#about">About</a>
+            <a class="disapear" href="#products-grid-container">Products</a>
+            
         </div>
     </header>
 
@@ -115,14 +116,17 @@
             other 2 inces down in the soil. This system can feed many plants and if you replace the bowl with an even
             bigger one you can increase the time you can travel.<br>
         </p>
-        <a href="#purchase" id="product-1-buy">13€<i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="#purchase" id="product-2-buy">20€<i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="#purchase" id="product-3-buy">75€<i class="fa-solid fa-cart-shopping"></i></a>
-    </section>
+        <a href="#purchase" id="product-1-buy">13€ <i class="fa-solid fa-cart-shopping"></i><hr></a>
+        <a href="#purchase" id="product-2-buy">20€ <i class="fa-solid fa-cart-shopping"></i><hr></a>
+        <a href="#purchase" id="product-3-buy">75€ <i class="fa-solid fa-cart-shopping"></i><hr></a>
+    </section> -->
 
     <div id="fun-quote-text">
+        <hr>
         <h2>"Keeping it simple"</h2>
-        <p>Come home to a green home no matter if you're gona a week or a month"</p>
+        <p>Come home to a green home no matter if you're gona a week or a month"
+            <hr>
+        </p>
     </div>
 
     </section>
@@ -170,7 +174,7 @@
     </section>
     <section id="purchase">
         <form id="purchase-form" action="https://formsubmit.co/eric.aj.backman@gmail.com" method="post">
-            <h2>Puchase Form:</h2>
+            <h2>Purchase Form:</h2>
             <fieldset id="your-info">
                 <legend>Your info:</legend>
 
@@ -215,9 +219,6 @@
                     <option value="pString">pString</option>
                 </select>
                 <input type="number" id="how-many-1" name="how-many-1" min="1" max="100" required><br>
-
-
-
                 <label for="select-product-2">Select Product:</label>
                 <select id="select-product-2" name="select-product-2" required>
                     <option value="pSphear">pSphear</option>
@@ -225,7 +226,6 @@
                     <option value="pString">pString</option>
                 </select>
                 <input type="number" id="how-many-2" name="how-many-2" min="1" max="100"><br>
-
                 <label for="select-product-3">Select Product:</label>
                 <select id="select-product-3" name="select-product-3">
                     <option value="pSphear">pSphear</option>
@@ -233,19 +233,12 @@
                     <option value="pString">pString</option>
                 </select>
                 <input type="number" id="how-many-3" name="how-many-3" min="1" max="100"><br>
-
-
             </fieldset>
-
-
             <input id="agreement-accept" type="checkbox" name="terms-accept" value="yes" required>
             <label for="agreement-accept">I accept the terms and conditions<label><br>
-
                     <input type="submit" name="submit" value="Let's Go!">
-
         </Form>
     </section>
-
     </section>
     <footer id="footer-grid-container">
         <div class="section-logo">
@@ -266,7 +259,6 @@
             168 64, Stockholm <br>
             Sweden
         </div>
-
         <div id="section-social">
             <a href="http://www.facebook.com" target="_blank" aria-label="link to our facebook in new tab"><i
                     class="fa-brands fa-facebook"></i></a>
