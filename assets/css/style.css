@@ -224,7 +224,7 @@ a:hover {
     margin-top: 4rem;
     min-height: 1rem;
     padding: 4rem 3rem;
-    box-shadow: inset 0 0 30px 30px rgb(255, 255, 255);
+    box-shadow: inset 0 0 30px 10px rgb(255, 255, 255);
     
 }
 
@@ -307,13 +307,13 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "a a a"
-        "b c d"
-        "e f g"
-        "h i j";
+                         "k l m"
+                         "b c d"
+                         "e f g"
+                         "h i j";
     text-align: center;
     column-gap: 5rem;
-    width: 80%;
-    margin: 2rem 10% 2rem 10%;
+
 }
 
 .product {
@@ -328,61 +328,84 @@ a:hover {
     text-align: center;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
+#products-grid-container>#product-1-logo{
+    grid-area: k;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+#products-grid-container>#product-2-logo{
+    grid-area: l;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+#products-grid-container>#product-3-logo{
+    grid-area: m;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
 
 #products-grid-container>#product-1 {
     background-image: url("../images/watering-ball.gif");
     background-size: contain;
     background-repeat: no-repeat;
-    line-height: 5rem;
-    font-size: 1.5rem;
+    height: 22rem;
+    width: 20rem;
     grid-area: b;
-    text-align: center;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve"><style type="text/css">.blur{filter:url(%23softedge);}</style><filter id="softedge"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter><g class="blur"><rect x="10" y="10" width="80" height="80"/></g></svg>'); 
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve"><style type="text/css">.blur{filter:url(%23softedge);}</style><filter id="softedge"><feGaussianBlur stdDeviation="1.0"></feGaussianBlur></filter><g class="blur"><rect x="10" y="10" width="80" height="80"/></g></svg>'); 
 	-webkit-mask-size: cover; 
 }
 
 #products-grid-container>#product-2 {
-    line-height: 5rem;
-    font-size: 1.5rem;
+    background-image: url("../images/Dropfeeder.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 22rem;
+    width: 20em;
     grid-area: c;
-    text-align: center;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="0.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve"><style type="text/css">.blur{filter:url(%23softedge);}</style><filter id="softedge"><feGaussianBlur stdDeviation="1"></feGaussianBlur></filter><g class="blur"><rect x="10" y="10" width="80" height="80"/></g></svg>'); 
+	-webkit-mask-size: cover; 
 }
 
 #products-grid-container>#product-3 {
-    line-height: 5rem;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-    font-size: 1.5rem;
+    background-image: url("../images/string.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 22rem;
+    width: 20rem;
     grid-area: d;
-    text-align: center;
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve"><style type="text/css">.blur{filter:url(%23softedge);}</style><filter id="softedge"><feGaussianBlur stdDeviation="1"></feGaussianBlur></filter><g class="blur"><rect x="10" y="10" width="80" height="80"/></g></svg>'); 
+	-webkit-mask-size: cover; 
 }
 
 #products-grid-container>#product-1-info {
     grid-area: e;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #products-grid-container>#product-2-info {
     grid-area: f;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #products-grid-container>#product-3-info {
     grid-area: g;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #products-grid-container>#product-1-buy {
     grid-area: h;
     font-size: 2rem;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #products-grid-container>#product-2-buy {
     grid-area: i;
     font-size: 2rem;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #products-grid-container>#product-3-buy {
     grid-area: j;
     font-size: 2rem;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #fun-quote-text {
