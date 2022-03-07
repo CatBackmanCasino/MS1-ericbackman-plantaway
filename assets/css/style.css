@@ -224,7 +224,7 @@ a:hover {
     background-size: cover;
     margin-top: 4rem;
     min-height: 1rem;
-    padding: 4rem 3rem;
+    padding: 4rem 3rem 0 3rem;
     box-shadow: inset 0 0 30px 10px rgb(255, 255, 255);
     
 }
@@ -322,7 +322,11 @@ a:hover {
 
 
 #products-grid-container > .section-logo {
-    font-size: 2rem;
+    height: 4rem;
+    background-color: rgba(177, 177, 177, 0.548);
+    line-height: 4rem;
+    letter-spacing: 8px;
+    font-size: 1.5rem;
     grid-area: a;
     text-align: center;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
@@ -441,7 +445,7 @@ a:hover {
     border-radius: 10px;
     border: none;
 }
-
+ 
 #main-fieldset fieldset{
     border: none;
     padding: 1rem;
