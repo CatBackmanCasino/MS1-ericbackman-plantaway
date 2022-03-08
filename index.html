@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>PlantWay - Enjoy your plantcation</title>
 </head>
+
 <body>
     <!-- section only to go to top -->
     <section id="top"></section>
@@ -32,7 +33,7 @@
             <h1>HOLA</h1>
         </div>
     </div>
-  
+
     <!-- header -->
     <header id="header">
         <div id="logo-big">
@@ -162,68 +163,79 @@
     </div>
     <!-- about -->
     <section id="about">
-        <h2>About</h2>
-        <p>Going away on vacation is a wonderful time. For many of us that is when we create our best memories of
-            our lives. Coming home to a sea of dead plants is one of the worst. <br>
-            <br>
-            Plants are awesome. Even the most urban city slickers can appreciate the shades
-            of green, the sense of life and the clean air they bring. They give us a lot and the only thing they
-            want in return is a little water and sunlight. Well, a little more at times but that's basically it.<br>
-            <br>
-            But if you're not there, how will they survive?<br>
-            <br>
-        </p>
-        <h3> options?</h3>
-        <ul id="options">
-            <li>You could ask someone to water them for you
-                <ul>
-                    <li>They might not show up?</li>
-                    <li>Can you trust them with a key?</li>
-                    <li>They might water too much and kill your plants</li>
+        <h2>About us:</h2>
+        <div id="about-grid-container">
+            <div id="section-a">
+                <p>We think going away on vacation is a wonderful time. For many of us that is when we create our best memories
+                    of our lives. Coming home to a sea of dead plants is one of the worst.
+                    <br>
+                    Plants are awesome. Even the most urban city slickers can appreciate the shades
+                    of green, the sense of life and the clean air they bring. They give us a lot and the only thing they
+                    want in return is a little water and sunlight. Well, a little more at times but that's basically
+                    it.
+                </p>
+            </div>
+            <div id="section-b">
+                <p>But if you're not there, how will they survive?
+                <ul id="options">
+                    <li>You could ask someone to water them for you
+                        <ul>
+                            <li>They might not show up?</li>
+                            <li>Can you trust them with a key?</li>
+                            <li>They might water too much and kill your plants</li>
+                        </ul>
+                    </li>
+                    <li> OR you could find the RIGHT watering system for your needs and be sure your plants get what
+                        they need
+                        while
+                        you don't have to worry about a thing</li>
                 </ul>
-            </li>
-            <li> OR you could find the RIGHT watering system for your needs and be sure your plants get what they need
-                while
-                you don't have to worry about a thing</li>
-        </ul>
-        <br>
-        <h3>Sounds complicated?</h3><br>
-        <p>It's not. <br>
-            <br>
-            Our three patented products each have different advantages. Take a quick look and you will know. If it takes
-            you more than three minutes, give us a call and we will help you with the right choice free of charge. <br>
-            <br>
-            Good luck!
-            /Plantcation Crew <br>
-            <br>
-        </p>
+            </p>
+            </div>
+            <div id="section-c">
+                Our patented products each have different advantages. Take a quick look and you will know. If it
+                takes
+                you more than three minutes, give us a call and we will help you with the right choice free of charge.
+                <br>
+                <br>
+                Good luck!
+                /Plantcation Crew
+                </p>
+            </div>
     </section>
     <!-- purchase -->
     <section id="purchase">
         <h2>PURCHASE</h2>
-        <form aria-label="purchase-form" id="purchase-form" action="https://formsubmit.co/eric.aj.backman@gmail.com" method="post">
+        <form aria-label="purchase-form" id="purchase-form" action="https://formsubmit.co/eric.aj.backman@gmail.com"
+            method="post">
             <fieldset id="main-fieldset">
                 <legend>Purchase Form:</legend>
                 <fieldset id="your-info">
                     <legend>Your info:</legend>
                     <label for="first_name">First Name:</label><br>
-                    <input id="first_name" name="first_name" placeholder="Jessica" type="text" required aria-label="first-name">
+                    <input id="first_name" name="first_name" placeholder="Jessica" type="text" required
+                        aria-label="first-name">
                     <br>
 
                     <label for="last_name">Last Name:</label><br>
-                    <input id="last_name" name="last_name" placeholder="Jameson" type="text" required aria-label="last-name">
+                    <input id="last_name" name="last_name" placeholder="Jameson" type="text" required
+                        aria-label="last-name">
                     <br>
                     <label for="email">E-mail:</label><br>
-                    <input id="email" name="email" placeholder="jessica_jameson@gmail.com" type="email" required aria-label="e-mail">
+                    <input id="email" name="email" placeholder="jessica_jameson@gmail.com" type="email" required
+                        aria-label="e-mail">
                     <br>
                     <label for="telephone">Telephone:</label><br>
-                    <input id="telephone" name="telephone" placeholder="+46 704 90 91 21" type="text" required aria-label="phonenumber">
+                    <input id="telephone" name="telephone" placeholder="+46 704 90 91 21" type="text" required
+                        aria-label="phonenumber">
                     <br>
                     <p>Prefered way of communication:</p>
                     <label for="tel">Telephone</label>
-                    <input id="tel" name="prefered_communication" type="radio" value="tel_pref" required aria-label="prefered-communication-telephone">
+                    <input id="tel" name="prefered_communication" type="radio" value="tel_pref" required
+                        aria-label="prefered-communication-telephone">
                     <label for="email-pref">E-mail</label>
-                    <input id="email-pref" name="prefered_communication" type="radio" value="email_pref" aria-label="prefered-communication-email">
+                    <input id="email-pref" name="prefered_communication" type="radio" value="email_pref"
+                        aria-label="prefered-communication-email">
                 </fieldset>
                 <br>
                 <fieldset id="purchase-info">
@@ -286,7 +298,8 @@
                         <option value="3">9</option>
                         <option value="3">10</option>
                     </select><br><br>
-                    <input id="agreement-accept" type="checkbox" name="terms-accept" value="yes" required aria-label="accept-terms">
+                    <input id="agreement-accept" type="checkbox" name="terms-accept" value="yes" required
+                        aria-label="accept-terms">
                     <label for="agreement-accept">I accept the terms and conditions</label><br>
                 </fieldset>
                 <input id="submit" type="submit" name="submit" value="GO!" aria-label="submit-order">
@@ -297,12 +310,15 @@
     <!-- footer -->
     <footer id="footer-grid-container">
         <div class="section-logo"> PLANTWAY INC </div>
-        <div id="section-opening-hours"> 
+        <div id="section-opening-hours">
             <h3>Opening Hours</h3> Monday - Friday<br> 09:00-17:00<br> Saturday - Sunday <br> Closed
         </div>
         <div id="section-contact">
-            <h3>Contact</h3> E-mail: <a href="mailto:eric.aj.backman@gmail.com" aria-label="email-us">Eric Bäckman</a><br><p> Telephone: +47 704
-            90 91 21</p> <br> <p>Address: Ankarstocksvägen 13 <br> 168 64, Stockholm <br> Sweden</p>
+            <h3>Contact</h3> E-mail: <a href="mailto:eric.aj.backman@gmail.com" aria-label="email-us">Eric
+                Bäckman</a><br>
+            <p> Telephone: +47 704
+                90 91 21</p> <br>
+            <p>Address: Ankarstocksvägen 13 <br> 168 64, Stockholm <br> Sweden</p>
         </div>
         <div id="section-social">
             <p>Social Media</p>
