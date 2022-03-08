@@ -489,14 +489,15 @@ select {
     color:black;
 }
 #submit {
-    padding: 1vw;
+    width: 70%;
+    padding: 1rem;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
     font-size: 2rem;
     background-color: rgb(120, 223, 106);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
     border-radius: 10px;
-    text-align: center;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+    margin: 0 15%;
 }
 
 #submit:hover {
