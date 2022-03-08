@@ -16,22 +16,24 @@ body {
     font-weight: 200;
     overflow-x: hidden;
 }
-
 /* adding a background color to whole site */
-#top {
-    position: sticky;
+#background-color {
+    position: fixed;
     background: rgb(245,245,245);
     background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(215,215,215,1) 46%, rgba(240,240,240,1) 100%);
     width: 100%;
     height: 100%;
     max-width: 1200px;
-    z-index: 1;
+    z-index: -100000;
 }
+/* anchor styling removal */
 
 a {
     color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 /* welcome-animation */
+
 #welcome-animation-container {
     z-index: 500000;
     position: fixed;
@@ -168,16 +170,13 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    min-height: 5rem;
+    height: 6rem;
     text-transform: uppercase;
     background-color: rgb(255, 255, 255);
     z-index: 99;
     display: grid;
     grid-template-columns: 1fr 3fr;
     max-width: 1200px;
-}
-#header a{
-    text-decoration: none;
 }
 
 #logo-big {
@@ -203,22 +202,21 @@ a {
     font-size: 1.5rem;
     text-align: right;
     text-shadow: 0px 0px 4px rgb(205, 255, 217);
-    text-decoration: none;
+    
 }
 
 .nav-item {
     float: right;
     margin: 0 2rem;
-    line-height: 70px;
+    line-height: 6rem;
     
 }
 
-.nav-item a{
-    text-decoration: none;
+
+/* Dropdown screens under 650px */
+#hamburger{
+    margin-top: 1rem;
 }
-
-
-
 #dropdown-menu{
     display: none;
     float: right;
@@ -249,14 +247,9 @@ a {
     
 }
 #dropdown-menu a{
-    text-decoration: none;
     letter-spacing: 0.5rem;
     text-align: right;
     padding-right: 1rem;
-}
-#dropdown-menu:hover ul{
-    line-height: 4rem;
-    opacity: 1;
 }
 
 /* presentation */
@@ -330,20 +323,6 @@ a {
     text-shadow: 4px 4px 10px black;
 }
 
-@keyframes arrow-movement {
-    0% {
-        top: -4rem;
-    }
-
-    50% {
-        top: 0rem;
-    }
-
-    100% {
-        top: -4rem;
-    }
-}
-
 /* products */
 #products-grid-container {
     width: 100%;
@@ -357,9 +336,7 @@ a {
     text-align: center;
 }
 
-
-
-#products-grid-container > .section-logo {
+.section-logo {
     height: 4rem;
     background-color: rgba(60, 187, 60, 0.623);
     line-height: 4rem;
@@ -368,19 +345,58 @@ a {
     grid-area: a;
     text-align: center;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-    
 }
 
 #product-1 {
     grid-area: c;
     background-color: rgba(172, 172, 172, 0.192);
 }
+
+#product-1-info {
+    background-color: rgba(172, 172, 172, 0.192);
+    padding: 0.5rem;
+    text-align: left;
+    grid-area: d;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+#product-1-buy {
+    background-color: rgba(172, 172, 172, 0.192);
+    grid-area: e;
+}
+
 #product-2 {
     grid-area: g;
+}
+
+#product-2-info {
+    padding: 0.5rem;
+    text-align: left;
+    grid-area: h;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+#product-2-buy {
+    grid-area: i;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 #product-3 {
     grid-area: k;
     background-color: rgba(172, 172, 172, 0.192);
+}
+
+#product-3-info {
+    background-color: rgba(172, 172, 172, 0.192);
+    padding: 0.5rem;
+    text-align: left;
+    grid-area: l;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+#product-3-buy {
+    background-color: rgba(172, 172, 172, 0.192);
+    grid-area:m;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #products-grid-container img{
@@ -393,44 +409,6 @@ a {
     font-size: 2rem;
     padding: 1rem 0;
 }
-#product-1-info {
-    background-color: rgba(172, 172, 172, 0.192);
-    padding: 0.5rem;
-    text-align: left;
-    grid-area: d;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-}
-
-#product-2-info {
-    padding: 0.5rem;
-    text-align: left;
-    grid-area: h;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-}
-
-#product-3-info {
-    background-color: rgba(172, 172, 172, 0.192);
-    padding: 0.5rem;
-    text-align: left;
-    grid-area: l;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-}
-
-#product-1-buy {
-    background-color: rgba(172, 172, 172, 0.192);
-    grid-area: e;
-}
-
-#product-2-buy {
-    grid-area: i;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-}
-
-#product-3-buy {
-    background-color: rgba(172, 172, 172, 0.192);
-    grid-area:m;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-}
 
 .shop-button{
     margin-top: 2rem;
@@ -440,16 +418,12 @@ a {
     font-size: 1rem;
     box-shadow: inset 0 0 5px 5px rgba(119, 119, 119, 0.493);
     border-radius: 8px;
-    text-decoration: none;
     padding: 0.5rem;
     background-color: rgba(60, 187, 60, 0.623);
+    margin-bottom: 1rem;
 }
 
-.shop-button a{
-    text-decoration: none;
-}
-
-
+/* Quote section */
 #fun-quote-text {
     text-align: center;
     padding: 4rem 0;
@@ -519,15 +493,6 @@ select {
     margin: 0 15%;
 }
 
-#submit:hover {
-    transform: scale(1.2);
-    box-shadow: 0px 0px 30px 20px rgba(51, 230, 75, 0.568);
-}
-
-input:focus{
-    background-color: rgba(135, 216, 139, 0.664);
-}
-
 /* footer */
 #footer-grid-container {
     width: 100%;
@@ -574,16 +539,30 @@ input:focus{
     word-spacing: normal;
 }
 
-/*animation */
-@keyframes slide-in {
-    from {
-        margin-left: -100%;
-    }
+/* psuedo */
 
-    to {
-        margin-left: 0;
-    }
+/* overall */
+
+a:hover{
+    cursor: crosshair;
+    color:rgb(65, 219, 51);
 }
+
+/* dropdown menu */
+#dropdown-menu:hover ul{
+    line-height: 4rem;
+    opacity: 1;
+}
+/* form psuedo */
+#submit:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 30px 20px rgba(51, 230, 75, 0.568);
+}
+
+input:focus{
+    background-color: rgba(135, 216, 139, 0.664);
+}
+
 
 /* welcome animation */
 @keyframes welcome-slide-up {
@@ -643,6 +622,24 @@ input:focus{
         visibility: hidden;
     }
 }
+/* arrow animation */
+@keyframes arrow-movement {
+    0% {
+        top: -4rem;
+    }
+
+    50% {
+        top: 0rem;
+    }
+
+    100% {
+        top: -4rem;
+    }
+}
+
+/* Media querries */
+
+/* under 1000px */
 
 @media screen and (max-width: 1000px) {
     #navigation-list {
@@ -691,6 +688,8 @@ input:focus{
         margin-bottom: 2rem;
     }
 }
+
+/* Under 650px */
 
 @media screen and (max-width: 650px) {
     #navigation-list {
