@@ -432,6 +432,10 @@ a:hover {
 #products-grid-container button{
     font-size: 2rem;
     margin-top: 50%;
+    color:rgb(8, 168, 30);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+    border: dotted;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0);
 }
 
 #fun-quote-text {
@@ -663,7 +667,7 @@ input:focus{
         margin-top: 0;
         margin-bottom: 1rem;
         width: 70%;
-        color:rgb(190, 146, 25)
+        
     }
 
     #about {
