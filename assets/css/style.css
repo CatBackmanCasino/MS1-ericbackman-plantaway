@@ -176,11 +176,14 @@ a {
     grid-template-columns: 1fr 3fr;
     max-width: 1200px;
 }
+#header a{
+    text-decoration: none;
+}
 
 #logo-big {
     font-size:medium;
     color: black;
-    padding: 1rem auto 1rem 1rem;
+    padding: 1rem 0 1rem 1rem;
     height: 70px;
     float: left;
     padding-left: 5px;
@@ -416,38 +419,36 @@ a {
 #product-1-buy {
     background-color: rgba(172, 172, 172, 0.192);
     grid-area: e;
-    font-size: 2rem;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #product-2-buy {
     grid-area: i;
-    font-size: 2rem;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #product-3-buy {
     background-color: rgba(172, 172, 172, 0.192);
     grid-area:m;
-    font-size: 2rem;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
-#products-grid-container button{
-    font-size: 2rem;
-    margin-top: 50%;
-    color:rgb(8, 168, 30);
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-    border: dotted;
-    box-shadow: 4px 4px 40px rgb(160, 160, 160);
-    line-height: 3rem;
-    padding: 1rem;
-}
-
-#products-grid-container a{
+.shop-button{
+    margin-top: 2rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    box-shadow: inset 0 0 5px 5px rgba(119, 119, 119, 0.493);
+    border-radius: 8px;
     text-decoration: none;
-    font-size: 1.3rem;
+    padding: 0.5rem;
+    background-color: rgba(60, 187, 60, 0.623);
 }
+
+.shop-button a{
+    text-decoration: none;
+}
+
 
 #fun-quote-text {
     text-align: center;
@@ -476,6 +477,9 @@ a {
 }
 
 /* purchase form */
+section h2{
+    text-align: center;
+}
 
 #main-fieldset {
     margin: 0 auto 2rem auto;
