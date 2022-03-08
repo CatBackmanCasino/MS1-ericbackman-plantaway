@@ -166,7 +166,8 @@
         <h2>About us:</h2>
         <div id="about-grid-container">
             <div id="section-a">
-                <p>We think going away on vacation is a wonderful time. For many of us that is when we create our best memories
+                <p>We think going away on vacation is a wonderful time. For many of us that is when we create our best
+                    memories
                     of our lives. Coming home to a sea of dead plants is one of the worst.
                     <br>
                     Plants are awesome. Even the most urban city slickers can appreciate the shades
@@ -190,7 +191,7 @@
                         while
                         you don't have to worry about a thing</li>
                 </ul>
-            </p>
+                </p>
             </div>
             <div id="section-c">
                 Our patented products each have different advantages. Take a quick look and you will know. If it
@@ -205,12 +206,10 @@
     </section>
     <!-- purchase -->
     <section id="purchase">
-        <h2>PURCHASE</h2>
         <form aria-label="purchase-form" id="purchase-form" action="https://formsubmit.co/eric.aj.backman@gmail.com"
             method="post">
-            <fieldset id="main-fieldset">
-                <legend>Purchase Form:</legend>
-                <fieldset id="your-info">
+            <div id="your-info-container">
+                <fieldset class="fieldset-styling">
                     <legend>Your info:</legend>
                     <label for="first_name">First Name:</label><br>
                     <input id="first_name" name="first_name" placeholder="Jessica" type="text" required
@@ -237,8 +236,9 @@
                     <input id="email-pref" name="prefered_communication" type="radio" value="email_pref"
                         aria-label="prefered-communication-email">
                 </fieldset>
-                <br>
-                <fieldset id="purchase-info">
+            </div>
+            <div id="purchase-info-container">
+                <fieldset class="fieldset-styling">
                     <legend>Order Information:</legend>
                     <label for="select-product-1">Select Product:</label>
                     <select id="select-product-1" name="select-product-1" aria-label="choose-product">
@@ -303,8 +303,7 @@
                     <label for="agreement-accept">I accept the terms and conditions</label><br>
                 </fieldset>
                 <input id="submit" type="submit" name="submit" value="GO!" aria-label="submit-order">
-            </fieldset>
-
+            </div>
         </Form>
     </section>
     <!-- footer -->

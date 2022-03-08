@@ -483,38 +483,24 @@ section h2{
 }
 
 form{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-}
-#main-fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: rgba(60, 187, 60, 0.623);
-    padding: 1rem;
+    width:fit-content;
+    margin: 1rem auto;
     border-radius: 1rem;
-
 }
 
-#main-fieldset legend{
-    padding: 0.2rem;
-    background-color: rgb(60, 187, 60);
-font-size: 1.2rem;
-border: 1px dotted black;
-border-radius: 1rem;
-}
- 
-#main-fieldset fieldset{
-    padding: 0.2rem;
-    border-radius: 1rem;
-    border: 1px dotted black;
-    margin-bottom: 1rem;
-
+.fieldset-styling{
+    border-style: none;
+    margin: 1rem 1rem;
 }
 
 select {
     color: black;
-
 }
+
+
 #submit {
     width: 70%;
     padding: 1rem;
