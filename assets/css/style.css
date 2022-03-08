@@ -472,6 +472,15 @@ a:hover {
     margin-bottom: 5rem;
 }
 
+#options {
+    list-style:inside;
+    padding: 1rem;
+}
+#options ul{
+    list-style:inside;
+    padding: 0 0 0 3rem;
+}
+
 /* purchase form */
 
 #main-fieldset {
