@@ -372,10 +372,13 @@ a {
 
 #product-1-info {
 
-    
     text-align: left;
     grid-area: d;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+#product-1-info p{
+    padding-left: 1rem;
 }
 
 #product-1-buy {
@@ -393,10 +396,16 @@ a {
 
 #product-2-info {
     
+    
     text-align: left;
     grid-area: h;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
+
+#product-2-info p{
+    padding-left: 1rem;
+}
+
 
 #product-2-buy {
     grid-area: i;
@@ -413,6 +422,10 @@ a {
     text-align: left;
     grid-area: l;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+#product-3-info p{
+    padding-left: 1rem;
 }
 
 #product-3-buy {
@@ -445,18 +458,10 @@ a {
     font-size: 0.5rem;
 }
 
-/* Quote section */
-#fun-quote-text {
-    text-align: center;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-    margin-bottom: 1rem;
-    width:100%;
-}
-
 /* About */
 #about {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     margin: 0 auto;
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -484,12 +489,11 @@ a {
     border-radius: 0 1rem 1rem 0;
 }
 #section-c {
-    margin-top: 3rem ;
+    margin-top: 1rem ;
     grid-area: c;
     background-color: rgba(60, 187, 60, 0.623);
     padding: 1rem;
     border-radius: 1rem;
-    margin-bottom: 1rem;
 }
 #options {
 list-style: inside;
