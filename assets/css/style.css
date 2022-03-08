@@ -16,6 +16,25 @@ body {
     font-weight: 200;
     overflow-x: hidden;
 }
+
+h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    background-color: rgba(60, 187, 60, 0.623);
+    width: 100%;
+    line-height: 3rem;
+    
+}
+h3{
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    width: 100%;
+    line-height: 2rem;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.26);
+    text-align: center;
+}
 /* adding a background color to whole site */
 #background-color {
     position: fixed;
@@ -223,13 +242,13 @@ a {
     text-align: right;
     position: relative;
     width: 100%;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 #dropdown-menu button{
     background-color: rgba(250, 235, 215, 0);
     color: grey;
-    font-size: 4rem;
+    font-size: 3rem;
     border: none;
 }
 #dropdown-menu ul{
@@ -239,7 +258,7 @@ a {
     background-color: rgba(255, 255, 255, 0.822);
     width: 100%;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 0px;
     text-align: right;
     transition: 0.5s;
@@ -259,14 +278,12 @@ a {
     margin-top: 4rem;
     min-height: 1rem;
     padding: 4rem 3rem 0 3rem;
-    box-shadow: inset 0 0 30px 10px rgb(255, 255, 255);
-    
+    box-shadow: inset 0 0 30px 10px rgb(255, 255, 255);   
 }
 
 #presentation-container {
     background-color: rgba(32, 175, 51, 0.781);
-    border-radius: 250px 0px 0px 0px;
-    margin-left: 8vw;
+    border-radius: 1rem;
     max-width: 60rem;
     box-shadow: 10px 10px 20px black;
     
@@ -279,8 +296,10 @@ a {
 }
 
 #presentation-text h2 {
+    line-height: normal;
     text-align: center;
     color: rgb(0, 41, 2);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #text-yellow-presentation {
@@ -305,7 +324,7 @@ a {
     overflow: hidden;
     box-shadow: 20px 5px 50px black;
     margin-right: 2rem;
-    margin-left: -4rem;
+    margin-left: -1rem;
     margin-top: -2rem;
 }
 
@@ -338,7 +357,6 @@ a {
 
 .section-logo {
     height: 4rem;
-    background-color: rgba(60, 187, 60, 0.623);
     line-height: 4rem;
     letter-spacing: 8px;
     font-size: 1.5rem;
@@ -349,28 +367,32 @@ a {
 
 #product-1 {
     grid-area: c;
-    background-color: rgba(172, 172, 172, 0.192);
+
 }
 
 #product-1-info {
-    background-color: rgba(172, 172, 172, 0.192);
-    padding: 0.5rem;
+
+    
     text-align: left;
     grid-area: d;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #product-1-buy {
-    background-color: rgba(172, 172, 172, 0.192);
     grid-area: e;
 }
 
+#grey-top-line{
+    background-color: rgba(0, 0, 0, 0.26);
+    height: 2rem;
+    width: 100%;
+}
 #product-2 {
     grid-area: g;
 }
 
 #product-2-info {
-    padding: 0.5rem;
+    
     text-align: left;
     grid-area: h;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
@@ -382,19 +404,18 @@ a {
 }
 #product-3 {
     grid-area: k;
-    background-color: rgba(172, 172, 172, 0.192);
+
 }
 
 #product-3-info {
-    background-color: rgba(172, 172, 172, 0.192);
-    padding: 0.5rem;
+ 
+    
     text-align: left;
     grid-area: l;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 #product-3-buy {
-    background-color: rgba(172, 172, 172, 0.192);
     grid-area:m;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
@@ -405,37 +426,37 @@ a {
     margin-bottom: 0;
 }
 
-#products-grid-container h3{
-    font-size: 2rem;
-    padding: 1rem 0;
-}
 
 .shop-button{
-    margin-top: 2rem;
-    width: 70%;
+    margin-top: 5rem;
+    width: 6rem;
+    height:3rem;
     margin-left: auto;
     margin-right: auto;
     font-size: 1rem;
     box-shadow: inset 0 0 5px 5px rgba(119, 119, 119, 0.493);
     border-radius: 8px;
-    padding: 0.5rem;
+    padding-top: 0.5rem;
     background-color: rgba(60, 187, 60, 0.623);
     margin-bottom: 1rem;
+}
+
+.shop-button p{
+    font-size: 0.5rem;
 }
 
 /* Quote section */
 #fun-quote-text {
     text-align: center;
-    padding: 4rem 0;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-    background-color: rgba(60, 187, 60, 0.623);
+    margin-bottom: 1rem;
+    width:100%;
 }
 
 /* About */
 #about {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
     padding-top: 1rem;
-    width: 80%;
     margin: 0 auto;
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -454,11 +475,12 @@ a {
     background-color: rgba(60, 187, 60, 0.623);
     padding: 1rem;
     border-radius: 1rem 0 0 1rem;
+    
 }
 #section-b {
     grid-area: b;
     background-color: rgba(60, 187, 60, 0.623);
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 0 1rem 1rem 0;
 }
 #section-c {
@@ -467,6 +489,7 @@ a {
     background-color: rgba(60, 187, 60, 0.623);
     padding: 1rem;
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 #options {
 list-style: inside;
@@ -524,7 +547,7 @@ select {
         "b b c c"
         "d d d d";
     text-align: center;
-    column-gap: 5rem;
+    
 }
 
 #footer-grid-container>.section-logo {
@@ -568,7 +591,7 @@ a:hover{
 
 /* dropdown menu */
 #dropdown-menu:hover ul{
-    line-height: 4rem;
+    line-height: 2rem;
     opacity: 1;
 }
 /* form psuedo */
@@ -672,8 +695,45 @@ input:hover{
         margin: 0 0.5rem;
     }
 
+
+
+    #about-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "a"
+                             "b"
+                             "c";
+    }
+
+    #section-a{
+        border-radius: 1rem 1rem 0 0;
+    }
+    #section-b{
+        border-radius: 0 0 1rem 1rem;
+    }
+    h3{
+        text-align: center;
+        font-weight: normal;
+        background-color: rgba(0, 0, 0, 0.26);
+    }
+}
+
+/* Under 650px */
+
+@media screen and (max-width: 650px) {
+    #navigation-list {
+        display: none;
+    }
+
+    #dropdown-menu{
+        display: block;
+    }
+    
+    #presentation-background {
+        padding: 1rem;
+    }
+
     #products-grid-container {
-        margin: 5rem auto 5rem auto;
+        margin: 5rem auto 1rem auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "a"
@@ -696,6 +756,11 @@ input:hover{
         width: 90%;
     }
 
+    #products-grid-container h3{
+        width: 100%;
+        
+    }
+
     #products-grid-container button{
         font-size: 2rem;
         margin-top: 0;
@@ -703,29 +768,16 @@ input:hover{
         width: 70%;
         
     }
-
-    #about {
-        padding-top: 2rem;
-        width: 90%;
-        margin-bottom: 2rem;
+    #products-grid-container h3{
+        width: 100%;
     }
-}
-
-/* Under 650px */
-
-@media screen and (max-width: 650px) {
-    #navigation-list {
-        display: none;
+    .shop-button{
+        margin-top: 1rem;
     }
 
-    #dropdown-menu{
-        display: block;
+    #section-a {
+        margin-top: 1rem;
     }
-    
-    #presentation-background {
-        padding: 1rem;
-    }
-
     #footer-grid-container {
         background-color: rgb(231, 231, 231);
         grid-template-columns: 1fr;
@@ -752,8 +804,45 @@ input:hover{
         height: 8rem;
         width: 8rem;
     }
+    #presentation-text{
+        padding: 0
+    }
 
     #plant-guy-image {
         height: 15rem;
     }
+
+    #about{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #about-grid-container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #section-b{
+        border-radius: 0;
+    }
+    #section-c{
+        margin-top: 0;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    form{
+        grid-template-columns: 1fr;
+      
+    }
+    #footer-logo, #social-media-footer {
+        font-size: 6vw;
+        letter-spacing: 3vw;
+    }
+    #footer-grid-container h3{
+        width: 100%;
+    }
+
+
+
 }
