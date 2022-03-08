@@ -473,6 +473,7 @@ a:hover {
 }
 
 /* purchase form */
+
 #main-fieldset {
     margin: 0 auto 2rem auto;
     padding-bottom: 2rem;
@@ -494,6 +495,10 @@ a:hover {
 #main-fieldset fieldset{
     border: none;
     padding: 1rem;
+}
+
+select {
+    color:black;
 }
 #submit {
     padding: 1vw;
