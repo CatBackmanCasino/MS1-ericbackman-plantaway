@@ -541,8 +541,6 @@ select {
 
 /* psuedo */
 
-/* overall */
-
 a:hover{
     cursor: crosshair;
     color:rgb(65, 219, 51);
@@ -561,6 +559,10 @@ a:hover{
 
 input:focus{
     background-color: rgba(135, 216, 139, 0.664);
+}
+
+input:hover{
+    color:green;
 }
 
 

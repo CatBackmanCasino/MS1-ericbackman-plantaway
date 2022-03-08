@@ -201,42 +201,41 @@
     <!-- purchase -->
     <section id="purchase">
         <h2>PURCHASE</h2>
-        <form id="purchase-form" action="https://formsubmit.co/eric.aj.backman@gmail.com" method="post">
+        <form aria-label="purchase-form" id="purchase-form" action="https://formsubmit.co/eric.aj.backman@gmail.com" method="post">
             <fieldset id="main-fieldset">
                 <legend>Purchase Form:</legend>
                 <fieldset id="your-info">
                     <legend>Your info:</legend>
                     <label for="first_name">First Name:</label><br>
-                    <input id="first_name" name="first_name" placeholder="Jessica" type="text" required>
+                    <input id="first_name" name="first_name" placeholder="Jessica" type="text" required aria-label="first-name">
                     <br>
 
                     <label for="last_name">Last Name:</label><br>
-                    <input id="last_name" name="last_name" placeholder="Jameson" type="text" required>
+                    <input id="last_name" name="last_name" placeholder="Jameson" type="text" required aria-label="last-name">
                     <br>
                     <label for="email">E-mail:</label><br>
-                    <input id="email" name="email" placeholder="jessica_jameson@gmail.com" type="email" required>
+                    <input id="email" name="email" placeholder="jessica_jameson@gmail.com" type="email" required aria-label="e-mail">
                     <br>
                     <label for="telephone">Telephone:</label><br>
-                    <input id="telephone" name="telephone" placeholder="+46 704 90 91 21" type="text" required>
+                    <input id="telephone" name="telephone" placeholder="+46 704 90 91 21" type="text" required aria-label="phonenumber">
                     <br>
                     <p>Prefered way of communication:</p>
                     <label for="tel">Telephone</label>
-                    <input id="tel" name="prefered_communication" type="radio" value="tel_pref" required>
-
+                    <input id="tel" name="prefered_communication" type="radio" value="tel_pref" required aria-label="prefered-communication-telephone">
                     <label for="email-pref">E-mail</label>
-                    <input id="email-pref" name="prefered_communication" type="radio" value="email_pref">
+                    <input id="email-pref" name="prefered_communication" type="radio" value="email_pref" aria-label="prefered-communication-email">
                 </fieldset>
                 <br>
                 <fieldset id="purchase-info">
                     <legend>Order Information:</legend>
                     <label for="select-product-1">Select Product:</label>
-                    <select id="select-product-1" name="select-product-1">
+                    <select id="select-product-1" name="select-product-1" aria-label="choose-product">
                         <option>pSphear</option>
                         <option>pDrop</option>
                         <option>pString</option>
                     </select>
 
-                    <select id="how-many-1" name="how-many-1">
+                    <select id="how-many-1" name="how-many-1" aria-label="ammount-of-products">
                         <option value="1">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -250,12 +249,12 @@
                         <option value="3">10</option>
                     </select><br>
                     <label for="select-product-2">Select Product:</label>
-                    <select id="select-product-2" name="select-product-2">
+                    <select id="select-product-2" name="select-product-2" aria-label="select-product">
                         <option value="pSphear">pSphear</option>
                         <option value="pDrop">pDrop</option>
                         <option value="pString">pString</option>
                     </select>
-                    <select id="how-many-2" name="how-many-2">
+                    <select id="how-many-2" name="how-many-2" aria-label="ammount-of-products">
                         <option value="1">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -269,12 +268,12 @@
                         <option value="3">10</option>
                     </select><br>
                     <label for="select-product-3">Select Product:</label>
-                    <select id="select-product-3" name="select-product-3">
+                    <select id="select-product-3" name="select-product-3" aria-label="select-product">
                         <option value="pSphear">pSphear</option>
                         <option value="pDrop">pDrop</option>
                         <option value="pString">pString</option>
                     </select>
-                    <select id="how-many-3" name="how-many-3">
+                    <select id="how-many-3" name="how-many-3" aria-label="ammount-of-products">
                         <option value="1">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -287,10 +286,10 @@
                         <option value="3">9</option>
                         <option value="3">10</option>
                     </select><br><br>
-                    <input id="agreement-accept" type="checkbox" name="terms-accept" value="yes" required>
+                    <input id="agreement-accept" type="checkbox" name="terms-accept" value="yes" required aria-label="accept-terms">
                     <label for="agreement-accept">I accept the terms and conditions</label><br>
                 </fieldset>
-                <input id="submit" type="submit" name="submit" value="GO!">
+                <input id="submit" type="submit" name="submit" value="GO!" aria-label="submit-order">
             </fieldset>
 
         </Form>
@@ -298,12 +297,12 @@
     <!-- footer -->
     <footer id="footer-grid-container">
         <div class="section-logo"> PLANTCATION AB </div>
-        <div id="section-opening-hours">
+        <div id="section-opening-hours" aria-label="opening-hours"> 
             <h3>Opening Hours</h3> Monday - Friday<br> 09:00-17:00<br> Saturday - Sunday <br> Closed
         </div>
-        <div id="section-contact">
-            <h3>Contact</h3> E-mail: <a href="mailto:webmaster@example.com">Eric Bäckman</a><br> Telephone: +47 704
-            90 91 21 <br> Address: Ankarstocksvägen 13 <br> 168 64, Stockholm <br> Sweden
+        <div id="section-contact" aria-label="contact-information">
+            <h3>Contact</h3> E-mail: <a href="mailto:eric.aj.backman@gmail.com" aria-label="email-us">Eric Bäckman</a><br><p aria-label="phone-number"> Telephone: +47 704
+            90 91 21</p> <br> <p aria-label="adress">Address: Ankarstocksvägen 13 <br> 168 64, Stockholm <br> Sweden</p>
         </div>
         <div id="section-social">
             <p>Social Media</p>
