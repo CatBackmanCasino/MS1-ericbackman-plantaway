@@ -541,6 +541,7 @@ input:focus{
 
 #footer-grid-container>#section-social {
     grid-area: d;
+    text-align: center;
 }
 
 #section-social {
