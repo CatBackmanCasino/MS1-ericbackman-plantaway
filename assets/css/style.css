@@ -274,11 +274,11 @@ a {
 /* presentation */
 #presentation-background {
     background-image: url("../wood-plants.jpg");
-    background-size: cover;
+    background-size:cover;
     margin-top: 4rem;
-    min-height: 1rem;
-    padding: 4rem 3rem 0 3rem;
-    box-shadow: inset 0 0 30px 10px rgb(255, 255, 255);   
+    min-height: 100%;
+    padding: 8rem 3rem 10rem 8rem;
+    box-shadow: inset 0 0 30px 10px rgba(255, 255, 255, 0.788);   
 }
 
 #presentation-container {
@@ -286,10 +286,10 @@ a {
     border-radius: 1rem;
     max-width: 60rem;
     box-shadow: 10px 10px 20px black;
-    
 }
 
 #presentation-text {
+    position: relative;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
     font-size: 1rem;
     padding: 2rem;
@@ -318,32 +318,36 @@ a {
 
 #owner-picture-container {
     float: left;
-    height: 15rem;
-    width: 15rem;
+    height: 13rem;
+    width: 13rem;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 20px 5px 50px black;
     margin-right: 2rem;
-    margin-left: -1rem;
-    margin-top: -2rem;
+    margin-left: -8rem;
+    margin-top: -4rem;
 }
+
+
+
+/* products */
 
 #arrow-down {
     color: rgb(101, 202, 88);
     text-align: right;
-    position: relative;
+    position: absolute;
+    right: 50%;
+    padding-top: 1rem;
     font-size: 5rem;
     animation-name: arrow-movement;
     animation-duration: 2s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    right: 4rem;
-    float: right;
-    text-shadow: 4px 4px 10px black;
+     text-shadow: 4px 4px 10px black;
 }
 
-/* products */
 #products-grid-container {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns:2fr 2fr 1fr;
@@ -561,7 +565,8 @@ select {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "a a a a"
         "b b c c"
-        "d d d d";
+        "d d d d"
+        "e e e e";
     text-align: center;
     
 }
@@ -596,6 +601,11 @@ select {
 #section-social p {
     font-size: 2rem;
     word-spacing: normal;
+}
+
+#certificates{
+    grid-area: e;
+    display: inline;
 }
 
 /* psuedo */
@@ -686,15 +696,15 @@ input:hover{
 /* arrow animation */
 @keyframes arrow-movement {
     0% {
-        top: -4rem;
+        top: -10rem;
     }
 
     50% {
-        top: 0rem;
+        top: -7rem;
     }
 
     100% {
-        top: -4rem;
+        top: -10rem;
     }
 }
 
@@ -748,8 +758,33 @@ input:hover{
         padding: 1rem;
     }
 
+    #presentation-background {
+        margin-top: 5rem;
+        height: auto;
+        padding: 2rem 1rem 1 1rem;
+     
+    }
+
+    #presentation-container {
+        margin-top: 1rem;
+    }
+
+    #owner-picture-container {
+        display: none;
+    }
+    #presentation-text{
+        padding: 1rem;
+    }
+
+    #plant-guy-image {
+        height: 15rem;
+    }
+ 
+    #arrow-down{
+        font-size: 2rem;
+    }
+
     #products-grid-container {
-        margin: 5rem auto 1rem auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "a"
@@ -826,22 +861,7 @@ input:hover{
         width: 100%;
     }
 
-    #presentation-container {
-        margin-top: 1rem;
-    }
-
-    #owner-picture-container {
-        margin-top: 1rem;
-        height: 8rem;
-        width: 8rem;
-    }
-    #presentation-text{
-        padding: 0
-    }
-
-    #plant-guy-image {
-        height: 15rem;
-    }
+ 
 
     #about{
         width: 100%;
@@ -881,6 +901,20 @@ input:hover{
         width: 100%;
     }
 
-
+    /* arrow animation for small screens */
+    
+    @keyframes arrow-movement {
+        0% {
+            top: -5rem;
+        }
+    
+        50% {
+            top: -3rem;
+        }
+    
+        100% {
+            top: -5rem;
+        }
+    }
 
 }
