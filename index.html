@@ -197,7 +197,7 @@
             <div id="section-c">
                 <p>Our patented products each have different advantages. Take a quick look and you will know. If it
                     takes
-                    you more than three minutes, give us a call and we will help you with the right choice free of
+                    you more than three minutes, give us a call or send us an e-mail and we will help you with the choice free of
                     charge.
                     <br>
                     <br>
@@ -245,14 +245,15 @@
                 <fieldset class="fieldset-styling">
                     <legend>Order Information:</legend>
                     <label for="select-product-1">Select Product:</label>
-                    <select id="select-product-1" name="select-product-1" aria-label="choose-product">
-                        <option>pSphear</option>
-                        <option>pDrop</option>
-                        <option>pString</option>
+                    <select id="select-product-1" name="select-product-1" aria-label="choose-product" required>
+                        <option value="">Choose one</option>
+                        <option value="sphear">pSphear</option>
+                        <option value="pdrop">pDrop</option>
+                        <option value="pstring">pString</option>
                     </select>
 
-                    <select id="how-many-1" name="how-many-1" aria-label="ammount-of-products">
-                        <option value="1">0</option>
+                    <select id="how-many-1" name="how-many-1" aria-label="ammount-of-products" required>
+                        <option value="">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -266,12 +267,13 @@
                     </select><br>
                     <label for="select-product-2">Select Product:</label>
                     <select id="select-product-2" name="select-product-2" aria-label="select-product">
-                        <option value="pSphear">pSphear</option>
-                        <option value="pDrop">pDrop</option>
-                        <option value="pString">pString</option>
+                        <option value="">Choose one</option>
+                        <option value="sphear">pSphear</option>
+                        <option value="pdrop">pDrop</option>
+                        <option value="pstring">pString</option>
                     </select>
                     <select id="how-many-2" name="how-many-2" aria-label="ammount-of-products">
-                        <option value="1">0</option>
+                        <option value="">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -285,12 +287,13 @@
                     </select><br>
                     <label for="select-product-3">Select Product:</label>
                     <select id="select-product-3" name="select-product-3" aria-label="select-product">
+                        <option value="">Choose one</option>
                         <option value="pSphear">pSphear</option>
                         <option value="pDrop">pDrop</option>
                         <option value="pString">pString</option>
                     </select>
                     <select id="how-many-3" name="how-many-3" aria-label="ammount-of-products">
-                        <option value="1">0</option>
+                        <option value="">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
