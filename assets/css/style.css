@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,700;1,100;1,200;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* remove from html standards */
 
@@ -23,7 +23,6 @@ body {
 h2 {
 	font-size: 1.5rem;
 	text-transform: uppercase;
-	font-weight: normal;
 	background-color: rgba(60, 187, 60, 0.623);
 	width: 100%;
 	line-height: 3rem;
@@ -238,6 +237,7 @@ a {
 	float: right;
 	margin: 0 2rem;
 	line-height: 6rem;
+	font-weight: 300;
 }
 
 
@@ -284,12 +284,13 @@ a {
 /* presentation */
 
 #presentation-background {
-	background-image: url("../images/wood-plants.jpg");
+	background-image:  linear-gradient(0deg, rgb(238, 238, 238) 0%, rgba(255, 92, 92, 0) 30%, rgba(37, 163, 163, 0) 100%), url("../images/wood-plants.jpg");
 	background-size: cover;
 	margin-top: 4rem;
 	min-height: 100%;
 	padding: 8rem 3rem 10rem 8rem;
-	box-shadow: inset 0 0 30px 10px rgba(255, 255, 255, 0.788);
+
+	
 }
 
 #presentation-container {
@@ -299,18 +300,20 @@ a {
 	box-shadow: 10px 10px 20px black;
 }
 
+#presentation-text h2 {
+	font-weight: 400;
+	line-height: normal;
+	text-align: center;
+	color: rgb(0, 41, 2);
+	background-color: rgba(0, 0, 0, 0);
+}
 #presentation-text {
 	position: relative;
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
 	font-size: 1rem;
 	padding: 2rem;
-}
-
-#presentation-text h2 {
-	line-height: normal;
-	text-align: center;
-	color: rgb(0, 41, 2);
-	background-color: rgba(0, 0, 0, 0);
+	font-weight: 400;
+	line-height: 1.6rem;
 }
 
 #text-yellow-presentation {
@@ -322,6 +325,9 @@ a {
 	color: rgb(255, 0, 0);
 	text-shadow: 4px 4px 10px black;
 }
+
+
+
 
 #plant-guy-image {
 	height: 26rem;
@@ -339,6 +345,22 @@ a {
 	margin-top: -4rem;
 }
 
+#quote{
+	background-image:  linear-gradient(180deg, rgb(238, 238, 238) 0%, rgba(255, 92, 92, 0) 20%, rgba(60, 187, 60, 0.623) 100%);
+	height: 8rem;
+	line-height: 8rem;
+	font-size: 3vw;
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
+	letter-spacing: 0.8vw;
+	font-weight: 200;
+}
+
+.green-text{
+	color: rgb(21, 177, 0);
+	font-weight: 500;
+	font-size: 3rem;
+}
 
 /* products */
 
@@ -366,7 +388,6 @@ a {
 }
 
 .section-logo {
-	height: 4rem;
 	line-height: 4rem;
 	letter-spacing: 8px;
 	font-size: 1.5rem;
@@ -525,6 +546,7 @@ a {
 
 section h2 {
 	text-align: center;
+	text-shadow: 5px 5px 10px rgb(0 0 0 / 43%);
 }
 
 form {
@@ -535,6 +557,13 @@ form {
 	margin: 1rem auto;
 	border-radius: 1rem;
 }
+
+input{
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
 
 .fieldset-styling {
 	border-style: none;
@@ -612,7 +641,8 @@ select {
 
 a:hover {
 	cursor: crosshair;
-	color: rgb(65, 219, 51);
+	color: rgb(155, 155, 155);
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.158);
 }
 
 
@@ -699,13 +729,13 @@ input:hover {
 
 @keyframes arrow-movement {
 	0% {
-		top: -10rem;
+		top: -22rem;
 	}
 	50% {
-		top: -7rem;
+		top: -18rem;
 	}
 	100% {
-		top: -10rem;
+		top: -22rem;
 	}
 }
 
@@ -877,4 +907,15 @@ input:hover {
 		font-size: 5vw;
 	}
 	#dropdown-menu ul {}
+}
+
+/* 404 error */
+
+#game-over{
+	text-align: center;
+	line-height: 4rem;
+	font-weight: 400;
+}
+#dead-link{
+	font-size: xx-large;
 }
