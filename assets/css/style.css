@@ -272,7 +272,7 @@ a {
 
 /* presentation */
 #presentation-background {
-    background-image: url("../wood-plants.jpg");
+    background-image: url("../images/wood-plants.jpg");
     background-size:cover;
     margin-top: 4rem;
     min-height: 100%;
