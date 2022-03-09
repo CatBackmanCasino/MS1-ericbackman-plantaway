@@ -238,10 +238,9 @@ a {
 }
 #dropdown-menu{
     display: none;
-    float: right;
     text-align: right;
-    position: relative;
-    width: 100%;
+    /* position: relative; */
+    /* width: 100%; */
     padding-right: 1rem;
 }
 
@@ -254,7 +253,8 @@ a {
 #dropdown-menu ul{
     
     position: absolute;
-    top: 5rem;
+    top: 6rem;
+    left: 0px;
     background-color: rgba(255, 255, 255, 0.822);
     width: 100%;
     list-style: none;
@@ -850,7 +850,8 @@ input:hover{
         grid-template-areas: "a"
                              "b"
                              "c"
-                             "d";
+                             "d"
+                             "e";
     }
 
     #section-social {
@@ -916,5 +917,27 @@ input:hover{
             top: -5rem;
         }
     }
+
+}
+
+@media screen and (max-width: 250px){
+    #logo-big {
+        font-size:6vw;
+        padding: 0.2rem 0 0.2rem 0.2rem;
+        /* height: 70px; */
+        padding-left: 2px;
+      
+    }
+    
+    #logo-big p {
+        font-size: 5vw;
+
+    }
+
+    #dropdown-menu ul{
+
+    }
+
+
 
 }
