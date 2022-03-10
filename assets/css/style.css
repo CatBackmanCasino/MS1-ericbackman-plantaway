@@ -923,11 +923,11 @@ input:hover {
 
 #terms{
 	text-align: center;
-	padding-top: 20rem;
+	padding: 20vh 10vw;
 }
 
 #hammer{
-	font-size: 15rem;
+	font-size: 15vw;
 	text-align: center;
 	transform: scale(1);
 	animation-name: hammer-scale;
