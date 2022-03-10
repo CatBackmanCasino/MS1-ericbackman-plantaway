@@ -115,27 +115,37 @@ A customer review section would make a first time customer feel more confident a
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
 The testing has mainly concisted in testing it on all my own devices and also with google dev-tools.
 
-Testing has concisted of mainly me doing my best to find any issues with responsivenes and funtcionality by testing the live site on my Macbook 15" late 2018 model and my iphone 12. 
+The site has slightly different designs depending on screen-size.
 
-I used googels dev-tools to virtually try it on different devices. After not finding any bugs or issues i asked my family to test it on their devices to see if they understand the site and if it works the way it should.
+ ## Queries
+ -  More than 1000px wide.
+     - The header is a logo on the left and a menu on the right
+     -  The presentation includes a picture
+     -  The Products and their corresponding info and purchase button are display side by side
+     -  The about section is displayed in two columns
+     -  purchase form section is displayed in two columns
+     -  Footer is divided into three columns
+-   Under 1000px and over 650px
+    -   Header changes font size to a smaller size
+    -   About section changes to one column
+-   under 650px
+    -   Nav changes to a hamburger dropdown
+    -   Products section changes into one column with product name, illustration, info and purchase.
+    -   Purchase form changes to one column
+    -   Footer changes to one column
+
+I used googels dev-tools to virtually try it on different devices. After not finding any bugs or issues i asked my family to test it on their devices to see if they understand the site and if it works the way it should. This would test both functionality, UX and Visuals.
 This resulted in two issues/bugs.
+
  - The word "home" in the  "quote" section appeared on top of the product section on smaller screens
  - After pressing "go" in the form a site opens to confirm the visitor is human. This opened in the same window and since the link back to the main site did not work it could cause problems.
 
  Both issues have been adresses and are solved.
 
 
-### Tested Devices
+### Physically Tested Devices
  - Iphone 12 
     - chrome - No issues
     - Safari - No issues
@@ -150,6 +160,23 @@ This resulted in two issues/bugs.
 
  - iphone 11 chrome 
     - no issues
+
+#### Virtually tested devices
+- Iphone 12 SE
+- Iphone XR
+- Iphone 12 Pro
+- Pixel 5
+- Galaxy s8+
+- Galaxy s20 Ultra
+- Ipad Air
+- Ipad Mini
+- Surface Pro 7
+- Surface Duo
+- Galaxy Fold
+- Galaxy A51/71
+- Nest Hub
+- Nest Hub Max
+- Imac 27"
 
 
 ### Validator Testing 
