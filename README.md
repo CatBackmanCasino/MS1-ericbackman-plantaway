@@ -1,6 +1,8 @@
 # Plantaway
 
 
+[Link to live site](https://catbackmancasino.github.io/MS1-ericbackman-plantcation/)
+
 
 Even the most urban city slicker of the concrete djungle can appreciate the fresh air and the different shades of green that houseplants provide, but we don't always have the time to tend for them. We travel for work, for vacation, to friends and family and some of us live hectic lives and simply forget them.
 
@@ -8,11 +10,28 @@ We can not help with your planning but we can provide simple ways to keep your p
 
 This site will make sure you always return to a green home while you're off living life to it's fullest.
 
-![Responsice Mockup](assets/images/ami-responsive.png)
+![Responsive Mockup](assets/images/ami-responsive.png)
+
+
+## User Stories
+
+- First time visitors:
+    - As a first time visitor I find the site via google searching for a way to solve a problem.
+    - When i reach the site I want to quickly find adequate information about the products.
+    - The information and illustrations need to convince me that
+        - The site is reliable.
+        - The products are functional
+    - As a first time visitor i need the process of purchase is made easy.
+
+- Returning visitors:
+    -   As a returning visitor I visit the site mainly to purchase a product I already know exist.
+    - I want to know if there are any new products without making my goal of purchase any less easy.
+    - I want to quickly find the purchase form and fill in my information
+
 
 ## Features 
 
-I wanted to create a very simple visual language that corresponds with the companys atmosphear. A simple and effective language with a positive vibe that gives no place for unnecessary features. Each feature is there for a reason.
+I wanted to create a very simple visual language that corresponds with the companys brand. A simple and effective language with a positive vibe that gives no place for unnecessary features. Each feature is there for a reason.
 
 ### Intro Animation
 
@@ -36,6 +55,11 @@ The first thing to catch your eye is a picture of our founder and a quote that m
 
 ![Landing Page](assets/images/landing-image.png)
 
+## Quote/Showcase
+This section is used to either showcase a new product or any other news regarding the company and its products. If there are nothing new to tell there will be a positive quote.
+
+![Quote/showcase](assets/images/quote%3Ashowcase.png)
+
 - __Products Section__
 
 Plantaway has three products with different features. The clients are everything from plant experts who already know what they want to persons who found the site because they have no idea how to solve the issue with watering while they're occupied with other things. The product section must tend to both.
@@ -54,12 +78,6 @@ For the newcomers of the indoor farmer life, I made extremely simple illustratio
 
 ![About section](assets/images/about-section.png)
 
-- __The Footer__ 
-
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
-
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
 
 - __The Purchase Form__
 
@@ -67,12 +85,25 @@ For the newcomers of the indoor farmer life, I made extremely simple illustratio
 
 ![Purchase Form](assets/images/purchase-form.png)
 
-All parts of this page is included in the index.html file and /assets/css/style.css files. 
+- __The Footer__ 
+
+ The footer is very simple and effective giving the visitor links to our social media profiles as well as opening hours and business location.
+
+ ![Footer](assets/images/footer.png)
+
+All parts of this page is included in the index.html file and /assets/css/style.css files as well as the 404.html abnd terms.html.
 
 - 404 error page
 Any site is nothing without a decent 404 document. 
 
 ![404](assets/images/404.png)
+
+- __Terms__
+
+In the purchase form you will find a link to the terms and conditions.
+No terms have been added but a proper text could be copy pasted in there.
+
+![Terms](assets/images/terms.png)
 
 ###Future Features Left to Implement
 
@@ -94,9 +125,15 @@ If this section grows too long, you may want to split it off into a separate fil
 
 The testing has mainly concisted in testing it on all my own devices and also with google dev-tools.
 
-Testing has concisted of mainly me doing my best to find any issues with responsivenes and funtcionality by testing the live site on my Macbook 15" late 2018 model and my iphone 12. I used googels dev-tools to virtually try it on different devices. After not finding any bugs or issues i asked my family to test it on their devices to see if they understand the site and if it works the way it should.
+Testing has concisted of mainly me doing my best to find any issues with responsivenes and funtcionality by testing the live site on my Macbook 15" late 2018 model and my iphone 12. 
 
-In testing the link leading back to the mainsite from the form submission site did not properly link back to main site so i made that open in a new tab instead.
+I used googels dev-tools to virtually try it on different devices. After not finding any bugs or issues i asked my family to test it on their devices to see if they understand the site and if it works the way it should.
+This resulted in two issues/bugs.
+ - The word "home" in the  "quote" section appeared on top of the product section on smaller screens
+ - After pressing "go" in the form a site opens to confirm the visitor is human. This opened in the same window and since the link back to the main site did not work it could cause problems.
+
+ Both issues have been adresses and are solved.
+
 
 ### Tested Devices
  - Iphone 12 
@@ -118,9 +155,10 @@ In testing the link leading back to the mainsite from the form submission site d
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatbackmancasino.github.io%2FMS1-ericbackman-plantcation%2Findex.html)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcatbackmancasino.github.io%2FMS1-ericbackman-plantcation%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=
+)
 
 ### Unfixed Bugs
 
@@ -128,49 +166,40 @@ There are no known bugs.
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+The project was based on the Code Institute GitHub template and deployed via GitHub pages in march 2022.
+After creating any repository on GitHub you can follow these steps to deply a site.
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-
-The live link can be found here - https://catbackmancasino.github.io/MS1-ericbackman-plantcation/
+1.  Log in to your Github Account
+2.  Open the repository that you want to go live with
+3.  Go to "settings"
+4.  Find the "pages link" on the left side menu.
+5.  Under "sources" press the button that says "none" and choose "main"
+6.  Click "save" and you will recieve a message saying your site is ready to be deployed.
+7.  After a few minutes this message will change into "your site is published at 'link to site'.
+8. you are now live and anyone with the link can see your site
 
 
 ## Credits 
 
 All HTML and CSS code is custom made with inspiration from the love running repo. 
 
-Positioning assistance - Web Dev Simplified youtube channel
-Visual and functionality assistance - Brian Macharia
-Gardient code - https://cssgradient.io/
-Picture of "owner" - Picture taken from vogue who borrowed it from chronicle books ‘boys with plants’.
+ - Positioning assistance - Web Dev Simplified youtube channel
+ - Visual and functionality assistance - Brian Macharia
+ - Gardient code - https://cssgradient.io/
+ - Picture of "owner" - Picture taken from vogue who borrowed it from chronicle books ‘boys with plants’.
+ - Fonts by Google Fonts
+ - Symbols by Font Awesome
+ - Form submit data - FormSubmit.co
+ - Inspiration for readme.md - Elaine Broche ![README.md]url(https://github.com/elainebroche-dev/ms1-thrive/blob/master/README.md)
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+All content written by me (Eric Bäckman) pretending to be the founder of the business.
 
 ### Media
 
-All visuals except from banner background and owner image is custom made by myself. 
+All visuals except from banner background and owner image is custom made by Eric
 
 
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
+Written by Eric Bäckman
+March 2022
