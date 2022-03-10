@@ -70,9 +70,9 @@ For the newcomers of the indoor farmer life, I made extremely simple illustratio
 
 - __About us section__
 
- This section gives the client an insight as to why PlantAway was founded. They are introduced to the common issues with keeping their plants alive while not being available and what solutions there is.
+ This section gives the client an insight as to why PlantAway was founded. They are introduced to the common issues with keeping their plants alive while not being available and what solutions there are.
 
- The user will be prompted to use our help to find the right product (if needed) or order from the purchase form.
+ The user will be encouraged to use our help to find the right product (if needed) or order from the purchase form.
 
 ![About section](assets/images/readme-images/about-section.png)
 
