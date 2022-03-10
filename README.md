@@ -48,10 +48,11 @@ For the newcomers of the indoor farmer life, I made extremely simple illustratio
 
 - __About us section__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+ This section gives the client an insight as to why Plantaway was founded. They are introduced to the common issues with keeping their plants alive  while not being available and what options they have to solve the problem.
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+ The user will be prompted to use our help to find the right product (if needed) or order from the purchase form.
+
+![About section](assets/images/about-section.png)
 
 - __The Footer__ 
 
@@ -60,26 +61,26 @@ For the newcomers of the indoor farmer life, I made extremely simple illustratio
 
 ![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
 
-- __Gallery__
+- __The Purchase Form__
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
+  - This is where the customer can order each product. The form is briliantly put togeather ensuring all the correct info is aquired. all fields except from the last to product rows are required. This is because if the cliebnt only want to order lets say one pSphear they wont have to fill out the fields for those who wants to order one of each or ten of each.
 
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
+![Sign Up](assets/images/purchase-form.png)
 
-- __The Sign Up Page__
+All parts of this page is included in the index.html file and /assets/css/style.css files. 
 
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
+- 404 error page
+Any site is nothing without a decent 404 document. 
 
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
+![404](assets/images/404.png)
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
+###Future Features Left to Implement
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+Obviously a proper purchase feature linked to creditcards and other payment services would be wise to implement to make purchases even more simple.
 
-### Features Left to Implement
+Getting a propper illustrator to make more visually appealing desribing the products would make the site look better and create a more professional impression.
 
-- Another feature idea
+A customer review section would make a first time customer feel more confident about a purchase.
 
 ## Testing 
 

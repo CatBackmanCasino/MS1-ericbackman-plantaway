@@ -641,7 +641,7 @@ select {
 
 a:hover {
 	cursor: crosshair;
-	color: rgb(155, 155, 155);
+	color: rgb(255, 255, 255);
 	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.158);
 }
 
