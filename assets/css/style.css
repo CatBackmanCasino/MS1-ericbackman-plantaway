@@ -918,3 +918,32 @@ input:hover {
 #dead-link{
 	font-size: xx-large;
 }
+
+/* terms site */
+
+#terms{
+	text-align: center;
+	padding-top: 20rem;
+}
+
+#hammer{
+	font-size: 15rem;
+	text-align: center;
+	transform: scale(1);
+	animation-name: hammer-scale;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+
+@keyframes hammer-scale {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.4);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
