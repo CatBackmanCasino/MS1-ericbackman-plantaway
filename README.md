@@ -1,7 +1,7 @@
 # PlantAway
 
 
-[Link to live site](https://catbackmancasino.github.io/MS1-ericbackman-plantcation/)
+[Link to live site](https://catbackmancasino.github.io/MS1-ericbackman-plantaway)
 
 
 Even the most urban city slicker of the concrete jungle can appreciate the fresh air and the different shades of green that houseplants provide, but we don't always have the time to care for them. We travel for work, for vacation, to friends and family and some of us live hectic lives and simply forget about them.
