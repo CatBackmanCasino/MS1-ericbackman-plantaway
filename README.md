@@ -63,9 +63,9 @@ For the newcomers of the indoor farmer life, I made extremely simple illustratio
 
 - __The Purchase Form__
 
-  - This is where the customer can order each product. The form is briliantly put togeather ensuring all the correct info is aquired. all fields except from the last to product rows are required. This is because if the cliebnt only want to order lets say one pSphear they wont have to fill out the fields for those who wants to order one of each or ten of each.
+  - This is where the customer can order each product. The form is briliantly put togeather ensuring all the correct info is aquired. all fields except from the last to product rows are required. This is because if the cliebnt only want to order lets say one pSphear they wont have to fill out the fields for those who wants to order one of each or ten of each. There is also a terms and conditions page linked but it contains nothing more than a short text and an animated hammer.
 
-![Sign Up](assets/images/purchase-form.png)
+![Purchase Form](assets/images/purchase-form.png)
 
 All parts of this page is included in the index.html file and /assets/css/style.css files. 
 
@@ -91,6 +91,10 @@ In addition, you should mention in this section how your project looks and works
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
+
+The testing has mainly concisted in testing it on all my own devices and also with google dev-tools.
+
+Physical devices tried
 
 
 ### Validator Testing 
