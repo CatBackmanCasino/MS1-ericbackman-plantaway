@@ -94,7 +94,25 @@ If this section grows too long, you may want to split it off into a separate fil
 
 The testing has mainly concisted in testing it on all my own devices and also with google dev-tools.
 
-Physical devices tried
+Testing has concisted of mainly me doing my best to find any issues with responsivenes and funtcionality by testing the live site on my Macbook 15" late 2018 model and my iphone 12. I used googels dev-tools to virtually try it on different devices. After not finding any bugs or issues i asked my family to test it on their devices to see if they understand the site and if it works the way it should.
+
+In testing the link leading back to the mainsite from the form submission site did not properly link back to main site so i made that open in a new tab instead.
+
+### Tested Devices
+ - Iphone 12 
+    - chrome - No issues
+    - Safari - No issues
+    - DuckDuckGo -No issues
+    
+ - iphone 12 mini
+    - safari  - no issues
+
+- lenovo 15" 
+    - issue with "home in the quote section dropping to a new line on top of products. 
+        - Issue is fixed.
+
+ - iphone 11 chrome 
+    - no issues
 
 
 ### Validator Testing 
@@ -106,7 +124,7 @@ Physical devices tried
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+There are no known bugs.
 
 ## Deployment
 
@@ -117,14 +135,17 @@ This section should describe the process you went through to deploy the project 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://catbackmancasino.github.io/MS1-ericbackman-plantcation/
 
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
+All HTML and CSS code is custom made with inspiration from the love running repo. 
 
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
+Positioning assistance - Web Dev Simplified youtube channel
+Visual and functionality assistance - Brian Macharia
+Gardient code - https://cssgradient.io/
+Picture of "owner" - Picture taken from vogue who borrowed it from chronicle books ‘boys with plants’.
 
 ### Content 
 
@@ -134,11 +155,8 @@ You can break the credits section up into Content and Media, depending on what y
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+All visuals except from banner background and owner image is custom made by myself. 
 
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
 
 ## Other General Project Advice
 
