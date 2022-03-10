@@ -10,7 +10,7 @@ We cannot help with your planning, but we can provide simple ways to keep your p
 
 This site will make sure you always return to a green home while you're off living life to its fullest.
 
-![Responsive Mock-up](assets/images/ami-responsive.png)
+![Responsive Mock-up](assets/images/readme-images/ami-responsive.png)
 
 
 ## User Stories
@@ -35,7 +35,7 @@ I wanted to create a very simple visual language that corresponds with the compa
 
 I wanted the first impression to be simple yet fun. The intro does just that. It's unexpected and shows a childish and almost retro feeling while also hinting to the travel aspect of the business idea by greeting the customer in four different languages.
 
-![Intro](assets/images/intro.png)
+![Intro](assets/images/readme-images/intro.png)
 
 - Navigation Bar
 
@@ -43,20 +43,20 @@ I wanted the first impression to be simple yet fun. The intro does just that. It
  By clicking any of the links the user will be transported to the corresponding area of the site. 
  Depending on screen size there will be either a hamburger dropdown or a regular header.
 
-![Nav Bar](assets/images/large-screen-nav.png)
+![Nav Bar](assets/images/readme-images/large-screen-nav.png)
 
-![Nav Bar](assets/images/small-screen-nav.png)
+![Nav Bar](assets/images/readme-images/small-screen-nav.png)
 
 - __The landing page image__
 
 The first thing to catch your eye is a picture of our founder and a quote that makes the visitor feel the business is trustworth. There are millions of sites out there so creating a personal connection with the customer makes all the difference. This gets us one step closer. By ending the section with a positive quote, we send the visitor to the next section with a positive feeling.
 
-![Landing Page](assets/images/landing-image.png)
+![Landing Page](assets/images/readme-images/landing-image.png)
 
 ## Quote/Showcase
 This section is used to either showcase a new product or any other news regarding the company and its products. If there are nothing new to tell there will be a positive quote.
 
-![Quote/showcase](assets/images/quote%3Ashowcase.png)
+![Quote/showcase](assets/images/readme-images/quote%3Ashowcase.png)
 
 - __Products Section__
 
@@ -66,7 +66,7 @@ For the more experienced plantista we have a large button with a cart to indicat
 
 For the newcomers of the indoor farmer life, I made extremely simple illustrations and well formulated sales pitches to explain each products advantages before gently leading them towards the purchase form.
 
-![Products](assets/images/products.png)
+![Products](assets/images/readme-images/products.png)
 
 - __About us section__
 
@@ -74,15 +74,15 @@ For the newcomers of the indoor farmer life, I made extremely simple illustratio
 
  The user will be prompted to use our help to find the right product (if needed) or order from the purchase form.
 
-![About section](assets/images/about-section.png)
+![About section](assets/images/readme-images/about-section.png)
 
 
 - __The Purchase Form__
 
   - This is where the customer can order each product. The form is brilliantly put together ensuring all the correct info is acquired. all fields except from the last to product rows are required. This is because if the client only wants to order let’s say one pSphear they won’t have to fill out the fields for those who wants to order one of each or ten of each. There is also a terms and conditions page linked but it contains nothing more than a short text and an animated hammer.
 
-![Purchase Form](assets/images/purchase-form.png)
-![Terms](assets/images/terms.png)
+![Purchase Form](assets/images/readme-images/purchase-form.png)
+![Terms](assets/images/readme-images/terms.png)
 
 - __The Footer__ 
 
@@ -90,9 +90,9 @@ For the newcomers of the indoor farmer life, I made extremely simple illustratio
 - 404 error page
 Any site is nothing without a decent 404 document. 
 
-![404](assets/images/404.png)
+![404](assets/images/readme-images/404.png)
 
- ![Footer](assets/images/footer.png)
+ ![Footer](assets/images/readme-images/footer.png)
 
 All parts of this page is included in the index.html file and /assets/css/style.css files as well as the 404.html and terms.html.
 
