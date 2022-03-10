@@ -647,7 +647,7 @@ form a{
 a:hover {
 	cursor: crosshair;
 	color: rgb(255, 255, 255);
-	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.158);
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.575);
 }
 
 
@@ -905,6 +905,11 @@ input:hover {
 		100% {
 			top: -5rem;
 		}
+	}
+	/* Psuedo small screens under 650px  */
+	a:hover {
+		color: rgb(0, 0, 0);
+		text-shadow: 2px 2px 2px rgb(0, 0, 0);
 	}
 }
 
