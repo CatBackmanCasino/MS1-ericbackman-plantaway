@@ -284,7 +284,7 @@ a {
 /* presentation */
 
 #presentation-background {
-	background-image:  linear-gradient(0deg, rgb(238, 238, 238) 0%, rgba(255, 92, 92, 0) 30%, rgba(37, 163, 163, 0) 100%), url("../images/wood-plants.webp");
+	background-image:  linear-gradient(0deg, rgb(238, 238, 238) 0%, rgba(255, 255, 255, 0) 30%, rgba(37, 163, 163, 0) 100%), url("../images/wood-plants.webp");
 	background-size: cover;
 	margin-top: 4rem;
 	min-height: 100%;
@@ -346,7 +346,7 @@ a {
 }
 
 #quote{
-	background-image:  linear-gradient(180deg, rgb(238, 238, 238) 0%, rgba(255, 92, 92, 0) 20%, rgba(60, 187, 60, 0.623) 100%);
+	background-image:  linear-gradient(180deg, rgb(238, 238, 238) 0%, rgba(255, 255, 255, 0) 20%, rgba(60, 187, 60, 0.623) 100%);
 	height: 9rem;
 	line-height: 8rem;
 	font-size: 1.5rem;
@@ -354,6 +354,7 @@ a {
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
 	letter-spacing: 0.5vw;
 	font-weight: 200;
+	padding-top: 40px;
 }
 
 .green-text{
@@ -786,6 +787,7 @@ input:hover {
 	}
 	#presentation-background {
 		padding: 1rem;
+		/* background-image:  linear-gradient(0deg, rgb(238, 238, 238) 0%, rgb(255, 255, 255) 80%, rgba(37, 163, 163, 0) 100%), url("../images/wood-plants.webp"); */
 	}
 	#presentation-background {
 		margin-top: 5rem;
@@ -794,6 +796,7 @@ input:hover {
 	}
 	#presentation-container {
 		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 	#owner-picture-container {
 		display: none;
