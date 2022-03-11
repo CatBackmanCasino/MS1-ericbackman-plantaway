@@ -284,7 +284,7 @@ a {
 /* presentation */
 
 #presentation-background {
-	background-image:  linear-gradient(0deg, rgb(238, 238, 238) 0%, rgba(255, 255, 255, 0) 30%, rgba(37, 163, 163, 0) 100%), url("../images/wood-plants.webp");
+	background-image:  linear-gradient(0deg, rgb(238, 238, 238) 0%, rgba(255, 255, 255, 0) 30%, rgb(255, 255, 255) 100%), url("../images/wood-plants.webp");
 	background-size: cover;
 	margin-top: 4rem;
 	min-height: 100%;
@@ -345,16 +345,23 @@ a {
 	margin-top: -4rem;
 }
 
-#quote{
+#quote-div{
 	background-image:  linear-gradient(180deg, rgb(238, 238, 238) 0%, rgba(255, 255, 255, 0) 20%, rgba(60, 187, 60, 0.623) 100%);
 	height: 9rem;
+	padding-top: 40px;
+}
+
+#quote-text{
 	line-height: 8rem;
 	font-size: 1.5rem;
 	text-align: center;
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
 	letter-spacing: 0.5vw;
 	font-weight: 200;
-	padding-top: 40px;
+	animation-name: slider;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
 }
 
 .green-text{
@@ -730,7 +737,6 @@ input:hover {
 	}
 }
 
-
 /* arrow animation */
 
 @keyframes arrow-movement {
@@ -745,6 +751,15 @@ input:hover {
 	}
 }
 
+/* quote/hightlight animation */
+@keyframes slider {
+	0%{opacity: 0%}
+	20%{opacity:100%}
+	70%{opacity:100%}
+	80%{opacity: 0%}
+	100%{opacity: 0%}
+	
+}
 
 /* Media querries */
 
