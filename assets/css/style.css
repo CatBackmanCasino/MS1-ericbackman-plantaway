@@ -346,13 +346,12 @@ a {
 }
 
 #quote-div{
-	background-image:  linear-gradient(180deg, rgb(238, 238, 238) 0%, rgba(255, 255, 255, 0) 20%, rgba(60, 187, 60, 0.623) 100%);
+	background-image:  linear-gradient(180deg, rgb(238, 238, 238) 0%, rgba(255, 255, 255, 0) 20%, rgba(60, 187, 60, 0.753) 100%);
 	height: 9rem;
 	padding-top: 40px;
 }
 
 #quote-text{
-	line-height: 8rem;
 	font-size: 1.5rem;
 	text-align: center;
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
