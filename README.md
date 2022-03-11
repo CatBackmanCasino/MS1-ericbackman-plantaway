@@ -1,6 +1,10 @@
 # PlantAway
 
 
+
+This is a site made for a made up company called Plantaway that specializes in self watering systems for houseplants.
+This site was made for educational purposes only.
+
 [Link to live site](https://catbackmancasino.github.io/MS1-ericbackman-plantaway)
 
 
@@ -54,7 +58,7 @@ The first thing to catch your eye is a picture of our founder and a quote that m
 ![Landing Page](assets/images/readme-images/landing-image.png)
 
 ## Quote/Showcase
-This section is used to either showcase a new product or any other news regarding the company and its products. If there are nothing new to tell there will be a positive quote.
+This section is used to either showcase a new product or any other news regarding the company and its products. If there are nothing new to tell there will be a positive quote. It is animatet to fade in and out to illustrate it can change over time during the time spent on the site.
 
 ![Quote/showcase](assets/images/readme-images/quote%3Ashowcase.png)
 
