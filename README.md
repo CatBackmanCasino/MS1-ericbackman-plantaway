@@ -177,10 +177,9 @@ This resulted in two issues/bugs.
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatbackmancasino.github.io%2FMS1-ericbackman-plantcation%2Findex.html)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatbackmancasino.github.io%2FMS1-ericbackman-plantaway%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcatbackmancasino.github.io%2FMS1-ericbackman-plantcation%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=
-)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcatbackmancasino.github.io%2FMS1-ericbackman-plantaway%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 
 ### Lighthouse results
 
