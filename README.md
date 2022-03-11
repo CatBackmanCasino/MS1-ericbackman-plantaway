@@ -79,7 +79,7 @@ For the newcomers of the indoor farmer life, I made extremely simple illustratio
 
 - __The Purchase Form__
 
-  - This is where the customer can order each product. The form is brilliantly put together ensuring all the correct info is acquired. all fields except from the last to product rows are required. This is because if the client only wants to order let’s say one pSphear they won’t have to fill out the fields for those who wants to order one of each or ten of each. There is also a terms and conditions page linked but it contains nothing more than a short text and an animated hammer.
+  - This is where the customer can buy our products. The form is well put together ensuring all the correct info is acquired. all fields except from the last to product rows are required. This is because if the client only wants to order let’s say one pSphear they won’t have to fill out the fields that come after. There is also a terms and conditions page linked but it contains nothing more than a short text and an animated hammer. An legally binding document could easily be imported here.
 
 ![Purchase Form](assets/images/readme-images/purchase-form.png)
 ![Terms](assets/images/readme-images/terms.png)
@@ -88,7 +88,7 @@ For the newcomers of the indoor farmer life, I made extremely simple illustratio
 
  The footer is very simple and effective giving the visitor links to our social media profiles as well as opening hours and business location.
 - 404 error page
-Any site is nothing without a decent 404 document. 
+Every site needs one. 
 
 ![404](assets/images/readme-images/404.png)
 
