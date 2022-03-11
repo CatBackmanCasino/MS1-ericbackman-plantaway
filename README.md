@@ -182,6 +182,13 @@ This resulted in two issues/bugs.
   - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcatbackmancasino.github.io%2FMS1-ericbackman-plantcation%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=
 )
 
+### Lighthouse results
+
+![lighthouse-results](assets/images/readme-images/lighthouse.png)
+
+As we can see the result is good even though the performance diagram is quite low. My theory is that this is because of the intro animation
+Keeping it's a calculated choice because the pros of introducing the visitor to the company in a way the company would like to be introduced, outwages the con of having a few ms longer wait before the site is loaded.
+
 ### Unfixed Bugs
 
 There are no known bugs.
