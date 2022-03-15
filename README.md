@@ -102,7 +102,7 @@ All parts of this page is included in the index.html file and /assets/css/style.
 
 
 
-###Future Features Left to Implement
+### Future Features Left to Implement
 
 A proper purchase feature linked to credit cards and other payment services would be wise to implement making purchases even more simple.
 
@@ -227,6 +227,7 @@ All HTML and CSS code is custom made with inspiration from the love running repo
  - Symbols by Font Awesome
  - Form submit data - FormSubmit.co
  - Inspiration for readme.md - Elaine Broche ![README.md]url(https://github.com/elainebroche-dev/ms1-thrive/blob/master/README.md)
+ - Picture for 404 page - Toonpool.com https://www.toonpool.com/cartoons/dead%20of%20flower_66063
 
 ### Content 
 
